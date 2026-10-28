@@ -1,0 +1,121 @@
+name: Build and test installed wheel
+
+"on":
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: wheel-tests-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  installed-wheel:
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: ubuntu-latest
+            python: "3.11"
+            sympy: "1.13.3"
+          - os: ubuntu-latest
+            python: "3.13"
+            sympy: "1.14.0"
+          - os: windows-latest
+            python: "3.11"
+            sympy: "1.13.3"
+          - os: windows-latest
+            python: "3.13"
+            sympy: "1.14.0"
+          - os: macos-latest
+            python: "3.11"
+            sympy: "1.13.3"
+          - os: macos-latest
+            python: "3.13"
+            sympy: "1.14.0"
+    env:
+      PYTHONNOUSERSITE: "1"
+      SYMPY_VERSION: ${{ matrix.sympy }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v7
+        with:
+          python-version: ${{ matrix.python }}
+          cache: pip
+          cache-dependency-path: pyproject.toml
+      - name: Install build and test tools
+        run: python -m pip install --upgrade pip build "pytest>=8" "twine>=5"
+      - name: Build and inspect wheel and source distribution
+        shell: python {0}
+        run: |
+          import email
+          import os
+          from pathlib import Path
+          import subprocess
+          import sys
+          import tarfile
+          import zipfile
+
+          root = Path(os.environ["GITHUB_WORKSPACE"]).resolve()
+          dist = Path(os.environ["RUNNER_TEMP"]) / "css-decoupling-dist"
+          subprocess.check_call([sys.executable, "-m", "build", "--outdir", str(dist), str(root)])
+          wheel, = dist.glob("*.whl")
+          sdist, = dist.glob("*.tar.gz")
+          subprocess.check_call([sys.executable, "-m", "twine", "check", str(wheel), str(sdist)])
+          with zipfile.ZipFile(wheel) as archive:
+              names = archive.namelist()
+              assert "css_decoupling/two_d/data/upstream-bb-tables.json" in names
+              assert "css_decoupling/algebra/quillen_suslin.py" in names
+              assert not any("/_vendor/" in name for name in names)
+              assert not any(name.startswith("css_decoupling_2d/") for name in names)
+              metadata_name, = [name for name in names if name.endswith(".dist-info/METADATA")]
+              metadata = email.message_from_bytes(archive.read(metadata_name))
+              assert metadata["Name"] == "css-decoupling"
+              assert metadata["License-Expression"] == "MIT"
+              for source, suffix in [
+                  ("LICENSE", "/licenses/LICENSE"),
+                  ("LICENSES/topological-css-code-decoupling-MIT.txt", "/licenses/LICENSES/topological-css-code-decoupling-MIT.txt"),
+              ]:
+                  member, = [name for name in names if name.endswith(suffix)]
+                  assert archive.read(member) == (root / source).read_bytes()
+          with tarfile.open(sdist) as archive:
+              relative = [name.split("/", 1)[1] for name in archive.getnames() if "/" in name]
+              assert "README.md" in relative and "docs/unified-api.md" in relative
+              assert not any(name.endswith("AGENTS.md") for name in relative)
+              assert not any(name.startswith("benchmarks/") for name in relative)
+              assert "tests/support/native_examples.py" in relative
+              assert "tests/support/direct_splitting_evidence.py" in relative
+          subprocess.check_call([sys.executable, "-m", "pip", "install", "sympy==" + os.environ["SYMPY_VERSION"]])
+          subprocess.check_call([sys.executable, "-m", "pip", "install", "--no-deps", str(wheel)])
+          subprocess.check_call([sys.executable, "-m", "pip", "check"])
+      - name: Verify installed imports and run tests outside the checkout
+        shell: python {0}
+        run: |
+          import os
+          from pathlib import Path
+          import subprocess
+          import sys
+
+          root = Path(os.environ["GITHUB_WORKSPACE"]).resolve()
+          work = Path(os.environ["RUNNER_TEMP"]) / "css-decoupling-wheel-tests"
+          work.mkdir()
+          env = dict(os.environ)
+          env.pop("PYTHONPATH", None)
+          check = (
+              "from pathlib import Path; import sys, css_decoupling, sympy; "
+              "from css_decoupling.two_d.models import PUBLISHED_BB_CODE_INSTANCES; "
+              "assert not Path(css_decoupling.__file__).resolve().is_relative_to(Path(sys.argv[1])); "
+              "assert len(PUBLISHED_BB_CODE_INSTANCES) == 60; "
+              "assert sympy.__version__ == sys.argv[2]"
+          )
+          subprocess.check_call([sys.executable, "-I", "-c", check, str(root), os.environ["SYMPY_VERSION"]], cwd=work, env=env)
+          subprocess.check_call([sys.executable, "-I", "-m", "pytest", str(root / "tests"),
+                                 "--import-mode=importlib", "-q"], cwd=work, env=env)
+          subprocess.check_call([sys.executable, "-I", "-m", "css_decoupling", "environment"], cwd=work, env=env)

@@ -1,0 +1,21 @@
+include pyproject.toml README.md LICENSE THIRD_PARTY_NOTICES.md
+include CITATION.cff CITATION.upstream.cff CONTRIBUTING.md CHANGELOG.md
+include MANIFEST.in
+recursive-include LICENSES *.txt
+recursive-include src/css_decoupling *.py
+include src/css_decoupling/two_d/data/*.json
+recursive-include tests *.py
+recursive-include examples *.py
+include docs/unified-api.md docs/general-reference.md
+include docs/paper-correspondence.md
+include docs/two-d/prime-qca-mathematics.md
+include docs/two-d/prime-factorization.md
+include docs/two-d/prime-circuits.md
+include docs/two-d/unstabilized-factorization.md
+include docs/two-d/no-input-ancilla.md
+include docs/two-d/qs-and-circuits.md
+prune build
+prune dist
+prune .pytest_cache
+prune .github
+global-exclude __pycache__ *.py[cod]

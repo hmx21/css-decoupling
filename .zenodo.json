@@ -1,0 +1,32 @@
+{
+  "title": "css-decoupling: decoupling translation-invariant topological CSS codes",
+  "upload_type": "software",
+  "version": "0.1.0",
+  "description": "Exact decoupling of translation-invariant topological CSS codes over prime-field Laurent polynomial rings into stacks of higher-form toric codes. Implements Algorithms 1 and 2 of M. He, Y. Wang, H. Song, and Y. Gu, 'Toric codes all the way down: decoupling translation-invariant topological CSS codes in higher dimensions' (2026), and a prime-field version of the two-dimensional algorithm of arXiv:2608.09915.",
+  "creators": [
+    {
+      "name": "He, Mingxin",
+      "affiliation": "Chen-Ning Yang Institute for Advanced Study, Tsinghua University"
+    }
+  ],
+  "license": "MIT",
+  "keywords": [
+    "quantum error correction",
+    "CSS codes",
+    "toric codes",
+    "quantum cellular automata",
+    "Laurent polynomials"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/hmx21/css-decoupling-lean",
+      "relation": "isSupplementedBy",
+      "resource_type": "software"
+    },
+    {
+      "identifier": "arXiv:2608.09915",
+      "relation": "references",
+      "scheme": "arxiv"
+    }
+  ]
+}

@@ -1,0 +1,5842 @@
+{
+  "summary": {
+    "total_rows": 153,
+    "completed_rows": 60,
+    "incomplete_upstream_rows": 93,
+    "completed_without_native_match": [],
+    "native_without_completed_match": [],
+    "source_sha256": {
+      "additional_bb_code_decoupling_results.md": "88f04ae6af101f25a7128b49ed81e7848cc781d5b664aafc7e50621bb1fb5b64",
+      "bb_code_decoupling_results.md": "996380563515bdde5f5f84d0ba7c33b310fbd5709980ac9ae633a9de99034de8"
+    }
+  },
+  "records": [
+    {
+      "source_file": "bb_code_decoupling_results.md",
+      "source_case_id": "case_001",
+      "f_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "upstream_completed": true,
+      "source_row": "| $x \\cdot y$ | $x \\cdot y$ | $3$ | $x \\cdot y^{2}$ | $x^{2} \\cdot y$ | 3.0 | (6, 12) | 1 | 2 | 0.014 | $x^{3} \\cdot y^{3}$ | 6 | - | - | 11 | - | case_001 |",
+      "native_identifiers": [
+        "benchmark-01"
+      ]
+    },
+    {
+      "source_file": "bb_code_decoupling_results.md",
+      "source_case_id": "case_002",
+      "f_exponents": [
+        [
+          -1,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "upstream_completed": true,
+      "source_row": "| $x^{-1} \\cdot y$ | $x \\cdot y$ | $7$ | $x^{2} \\cdot y^{3}$ | $x^{3} \\cdot y$ | 7.0 | (14, 28) | 4 | 3 | 0.143 | $x^{5} \\cdot y^{4}$ | 9 | - | - | 8 | - | case_002 |",
+      "native_identifiers": [
+        "benchmark-02"
+      ]
+    },
+    {
+      "source_file": "bb_code_decoupling_results.md",
+      "source_case_id": "case_003",
+      "f_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "upstream_completed": true,
+      "source_row": "| $x^{2}$ | $x^{2}$ | $3$ | $x \\cdot y^{2}$ | $x^{2} \\cdot y$ | 3.0 | (6, 12) | 1 | 2 | 0.013 | $x^{4} \\cdot y^{2}$ | 6 | - | - | 7 | - | case_003 |",
+      "native_identifiers": [
+        "benchmark-03"
+      ]
+    },
+    {
+      "source_file": "bb_code_decoupling_results.md",
+      "source_case_id": "case_004",
+      "f_exponents": [
+        [
+          -1,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "upstream_completed": true,
+      "source_row": "| $x^{-1}$ | $y^{-1}$ | $3$ | $y^{3}$ | $x^{3}$ | 9.0 | (18, 36) | 5 | 4 | 0.054 | $y^{-3}$ | 3 | - | - | 10 | - | case_004 |",
+      "native_identifiers": [
+        "benchmark-04"
+      ]
+    },
+    {
+      "source_file": "bb_code_decoupling_results.md",
+      "source_case_id": "case_005",
+      "f_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          -1
+        ]
+      ],
+      "upstream_completed": true,
+      "source_row": "| $x \\cdot y$ | $x \\cdot y^{-1}$ | $7$ | $x \\cdot y^{3}$ | $x^{3} \\cdot y^{2}$ | 7.0 | (14, 28) | 4 | 3 | 0.03 | $x^{4} \\cdot y^{5}$ | 9 | - | - | 16 | - | case_005 |",
+      "native_identifiers": [
+        "benchmark-05"
+      ]
+    },
+    {
+      "source_file": "bb_code_decoupling_results.md",
+      "source_case_id": "case_006",
+      "f_exponents": [
+        [
+          -1,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "upstream_completed": true,
+      "source_row": "| $x^{-1}$ | $x^{3} \\cdot y^{2}$ | $3$ | $y^{3}$ | $x^{3}$ | 9.0 | (18, 36) | 5 | 4 | 0.027 | $x^{9} \\cdot y^{3} + x^{6} \\cdot y^{3} + x^{6} + x^{3}$ | 12 | - | - | 30 | - | case_006 |",
+      "native_identifiers": [
+        "benchmark-06"
+      ]
+    },
+    {
+      "source_file": "bb_code_decoupling_results.md",
+      "source_case_id": "case_007",
+      "f_exponents": [
+        [
+          0,
+          -2
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          -2,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "upstream_completed": true,
+      "source_row": "| $y^{-2}$ | $x^{-2}$ | $21$ | $x^{2} \\cdot y^{5}$ | $x^{5} \\cdot y^{2}$ | 21.0 | (42, 84) | 16 | 5 | 0.184 | $x^{-2} \\cdot y^{-5} + x^{-7} \\cdot y^{-7}$ | 14 | - | - | 54 | - | case_007 |",
+      "native_identifiers": [
+        "benchmark-07"
+      ]
+    },
+    {
+      "source_file": "bb_code_decoupling_results.md",
+      "source_case_id": "case_008",
+      "f_exponents": [
+        [
+          0,
+          -2
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "upstream_completed": true,
+      "source_row": "| $y^{-2}$ | $x^{2}$ | $15$ | $y^{5}$ | $x^{3} \\cdot y^{3}$ | 15.0 | (30, 60) | 11 | 4 | 0.109 | $x^{9} \\cdot y^{4} + x^{6} \\cdot y^{6} + x^{3} \\cdot y^{8} + x^{3} \\cdot y^{-2} + 1 + x^{-3} \\cdot y^{-3}$ | 13 | - | - | 126 | - | case_008 |",
+      "native_identifiers": [
+        "benchmark-08"
+      ]
+    },
+    {
+      "source_file": "bb_code_decoupling_results.md",
+      "source_case_id": "case_009",
+      "f_exponents": [
+        [
+          -1,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          -1,
+          -1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "upstream_completed": true,
+      "source_row": "| $x^{-1} \\cdot y$ | $x^{-1} \\cdot y^{-1}$ | $31$ | $x^{3} \\cdot y^{8}$ | $x^{5} \\cdot y^{3}$ | 31.0 | (62, 124) | 26 | 5 | 0.514 | $x^{-3} \\cdot y^{-8}$ | 11 | - | - | 70 | - | case_009 |",
+      "native_identifiers": [
+        "benchmark-09"
+      ]
+    },
+    {
+      "source_file": "bb_code_decoupling_results.md",
+      "source_case_id": "case_010",
+      "f_exponents": [
+        [
+          -2,
+          -1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "upstream_completed": true,
+      "source_row": "| $x^{-2} \\cdot y^{-1}$ | $x^{2} \\cdot y$ | $3$ | $y^{3}$ | $x \\cdot y$ | 3.0 | (6, 12) | 1 | 2 | 0.014 | $x^{3} \\cdot y^{3} + x \\cdot y^{4} + x \\cdot y + y^{3} + 1$ | 6 | - | - | 18 | - | case_010 |",
+      "native_identifiers": [
+        "benchmark-10"
+      ]
+    },
+    {
+      "source_file": "bb_code_decoupling_results.md",
+      "source_case_id": "case_011",
+      "f_exponents": [
+        [
+          -1,
+          3
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          3,
+          -1
+        ]
+      ],
+      "upstream_completed": true,
+      "source_row": "| $x^{-1} \\cdot y^{3}$ | $x^{3} \\cdot y^{-1}$ | $12$ | $y^{12}$ | $x^{12}$ | 144.0 | (288, 576) | 136 | 8 | 9.29 | $x^{24} \\cdot y^{-12} + x^{12}$ | 36 | - | - | 691 | - | case_011 |",
+      "native_identifiers": [
+        "benchmark-11"
+      ]
+    },
+    {
+      "source_file": "bb_code_decoupling_results.md",
+      "source_case_id": "case_012",
+      "f_exponents": [
+        [
+          -2,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          -2,
+          2
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "upstream_completed": true,
+      "source_row": "| $x^{-2}$ | $x^{-2} \\cdot y^{2}$ | $7$ | $y^{7}$ | $x^{7}$ | 49.0 | (98, 196) | 43 | 6 | 0.785 | $x^{7} \\cdot y^{7} + x^{-7} \\cdot y^{14} + x^{-7} \\cdot y^{7}$ | 21 | - | - | 118 | - | case_012 |",
+      "native_identifiers": [
+        "benchmark-12"
+      ]
+    },
+    {
+      "source_file": "bb_code_decoupling_results.md",
+      "source_case_id": "case_013",
+      "f_exponents": [
+        [
+          -1,
+          -3
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          3,
+          -1
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| $x^{-1} \\cdot y^{-3}$ | $x^{3} \\cdot y^{-1}$ | $762$ | $x^{90} \\cdot y^{66}$ | $x^{102} \\cdot y^{24}$ | 4572.0 | - | - | - | 1.224 | - | - | - | - | - | - | case_013 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "bb_code_decoupling_results.md",
+      "source_case_id": "case_014",
+      "f_exponents": [
+        [
+          -2,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          -2
+        ]
+      ],
+      "upstream_completed": true,
+      "source_row": "| $x^{-2} \\cdot y$ | $x \\cdot y^{-2}$ | $63$ | $x^{6} \\cdot y^{15}$ | $x^{15} \\cdot y^{6}$ | 189.0 | (378, 756) | 181 | 8 | 26.518 | $x^{24} \\cdot y^{-3} + x^{18} \\cdot y^{-18} + x^{15} \\cdot y^{6} + x^{9} \\cdot y^{-9} + x^{6} \\cdot y^{15} + x^{3} \\cdot y^{-24} + 1 + x^{-15} \\cdot y^{-6} + x^{-27} \\cdot y^{-36}$ | 63 | - | - | 2488 | - | case_014 |",
+      "native_identifiers": [
+        "benchmark-13"
+      ]
+    },
+    {
+      "source_file": "bb_code_decoupling_results.md",
+      "source_case_id": "case_015",
+      "f_exponents": [
+        [
+          -1,
+          2
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          -2,
+          -1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "upstream_completed": true,
+      "source_row": "| $x^{-1} \\cdot y^{2}$ | $x^{-2} \\cdot y^{-1}$ | $217$ | $x^{3} \\cdot y^{13}$ | $x^{19} \\cdot y^{10}$ | 217.0 | (434, 868) | 209 | 8 | 40.519 | $x^{19} \\cdot y^{10} + 1 + x^{-6} \\cdot y^{-26} + x^{-19} \\cdot y^{-10} + x^{-22} \\cdot y^{-23} + x^{-25} \\cdot y^{-36} + x^{-28} \\cdot y^{-49} + x^{-38} \\cdot y^{-20} + x^{-44} \\cdot y^{-46}$ | 90 | - | - | 2660 | - | case_015 |",
+      "native_identifiers": [
+        "benchmark-14"
+      ]
+    },
+    {
+      "source_file": "bb_code_decoupling_results.md",
+      "source_case_id": "case_016",
+      "f_exponents": [
+        [
+          -3,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "upstream_completed": true,
+      "source_row": "| $x^{-3} \\cdot y$ | $x^{3} \\cdot y^{2}$ | $63$ | $y^{63}$ | $x^{21}$ | 1323.0 | (2646, 5292) | 1312 | 11 | 17056.737 | $x^{21} \\cdot y^{189} + x^{21} \\cdot y^{126} + x^{21} \\cdot y^{63} + x^{21} + y^{126} + 1 + y^{-63} + x^{-21} \\cdot y^{189} + x^{-21} \\cdot y^{63} + x^{-42} \\cdot y^{63}$ | 210 | - | - | 14894 | - | case_016 |",
+      "native_identifiers": [
+        "julia-case-16"
+      ]
+    },
+    {
+      "source_file": "bb_code_decoupling_results.md",
+      "source_case_id": "case_017",
+      "f_exponents": [
+        [
+          -3,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          -5,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "upstream_completed": true,
+      "source_row": "| $x^{-3} \\cdot y$ | $x^{-5}$ | $21$ | $y^{21}$ | $x \\cdot y$ | 21.0 | (42, 84) | 16 | 5 | 0.307 | $x^{-1} \\cdot y^{-1} + x^{-2} \\cdot y^{-2} + x^{-3} \\cdot y^{-3} + x^{-3} \\cdot y^{-24} + x^{-4} \\cdot y^{-4} + x^{-5} \\cdot y^{-5} + x^{-5} \\cdot y^{-26} + x^{-6} \\cdot y^{-6} + x^{-6} \\cdot y^{-27} + x^{-7} \\cdot y^{-7} + x^{-7} \\cdot y^{-28} + x^{-8} \\cdot y^{-29} + x^{-9} \\cdot y^{-9} + x^{-10} \\cdot y^{-10}$ | 37 | - | - | 610 | - | case_017 |",
+      "native_identifiers": [
+        "benchmark-15"
+      ]
+    },
+    {
+      "source_file": "bb_code_decoupling_results.md",
+      "source_case_id": "case_018",
+      "f_exponents": [
+        [
+          -2,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "upstream_completed": true,
+      "source_row": "| $x^{-2} \\cdot y$ | $x \\cdot y^{2}$ | $105$ | $x^{3} \\cdot y^{12}$ | $x^{9} \\cdot y$ | 105.0 | (210, 420) | 98 | 7 | 5.353 | $x^{21} \\cdot y^{14} + x^{9} \\cdot y$ | 35 | - | - | 194 | - | case_018 |",
+      "native_identifiers": [
+        "benchmark-16"
+      ]
+    },
+    {
+      "source_file": "bb_code_decoupling_results.md",
+      "source_case_id": "case_019",
+      "f_exponents": [
+        [
+          -1,
+          -2
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          -1
+        ]
+      ],
+      "upstream_completed": true,
+      "source_row": "| $x^{-1} \\cdot y^{-2}$ | $x \\cdot y^{-1}$ | $63$ | $y^{9}$ | $x^{7} \\cdot y^{3}$ | 63.0 | (126, 252) | 57 | 6 | 1.311 | $x^{7} \\cdot y^{-6}$ | 13 | - | - | 64 | - | case_019 |",
+      "native_identifiers": [
+        "benchmark-17"
+      ]
+    },
+    {
+      "source_file": "bb_code_decoupling_results.md",
+      "source_case_id": "case_020",
+      "f_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          -4,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "upstream_completed": true,
+      "source_row": "| $y^{2}$ | $x^{-4} \\cdot y$ | $73$ | $x^{5} \\cdot y^{7}$ | $x^{14} \\cdot y^{5}$ | 73.0 | (146, 292) | 64 | 9 | 3.254 | $x^{37} \\cdot y^{8} + x^{28} \\cdot y^{10} + 1 + x^{-5} \\cdot y^{-7}$ | 45 | - | - | 474 | - | case_020 |",
+      "native_identifiers": [
+        "benchmark-18"
+      ]
+    },
+    {
+      "source_file": "bb_code_decoupling_results.md",
+      "source_case_id": "case_021",
+      "f_exponents": [
+        [
+          -1,
+          2
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          -4
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "upstream_completed": true,
+      "source_row": "| $x^{-1} \\cdot y^{2}$ | $y^{-4}$ | $105$ | $y^{21}$ | $x^{35} \\cdot y^{7}$ | 735.0 | (1470, 2940) | 725 | 10 | 979.291 | $y^{-21} + y^{-42} + y^{-63} + x^{-35} \\cdot y^{-7} + x^{-35} \\cdot y^{-28} + x^{-70} \\cdot y^{-56} + x^{-70} \\cdot y^{-77}$ | 147 | - | - | 9750 | - | case_021 |",
+      "native_identifiers": [
+        "benchmark-19"
+      ]
+    },
+    {
+      "source_file": "bb_code_decoupling_results.md",
+      "source_case_id": "case_022",
+      "f_exponents": [
+        [
+          0,
+          -4
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "upstream_completed": true,
+      "source_row": "| $y^{-4}$ | $x^{4}$ | $255$ | $y^{17}$ | $x^{15} \\cdot y^{13}$ | 255.0 | (510, 1020) | 239 | 16 | 79.217 | $x^{60} \\cdot y^{35} + x^{45} \\cdot y^{39} + x^{45} \\cdot y^{5} + x^{30} \\cdot y^{9} + x^{15} \\cdot y^{13} + x^{15} \\cdot y^{-4} + x^{15} \\cdot y^{-21} + y^{-34} + x^{-15} \\cdot y^{-30}$ | 95 | - | - | 2058 | - | case_022 |",
+      "native_identifiers": [
+        "benchmark-20"
+      ]
+    },
+    {
+      "source_file": "bb_code_decoupling_results.md",
+      "source_case_id": "case_023",
+      "f_exponents": [
+        [
+          -8,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          6,
+          2
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| $x^{-8} \\cdot y$ | $x^{6} \\cdot y^{2}$ | - | - | - | - | - | - | - | 0.082 | - | - | - | - | - | - | case_023 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "bb_code_decoupling_results.md",
+      "source_case_id": "case_024",
+      "f_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| $x^{2} \\cdot y^{3}$ | $x^{4} \\cdot y$ | $1785$ | $x^{8} \\cdot y^{13}$ | $x^{141} \\cdot y^{6}$ | 1785.0 | - | - | - | 12.51 | - | - | - | - | - | - | case_024 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "bb_code_decoupling_results.md",
+      "source_case_id": "case_025",
+      "f_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          -2
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| $x^{2} \\cdot y^{3}$ | $x^{2} \\cdot y^{-2}$ | $93$ | $y^{93}$ | $x^{31} \\cdot y^{31}$ | 2883.0 | - | - | - | 0.008 | - | - | - | - | - | - | case_025 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "bb_code_decoupling_results.md",
+      "source_case_id": "case_026",
+      "f_exponents": [
+        [
+          -4,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          -3,
+          2
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "upstream_completed": true,
+      "source_row": "| $x^{-4}$ | $x^{-3} \\cdot y^{2}$ | $21$ | $y^{21}$ | $x^{21}$ | 441.0 | (882, 1764) | 431 | 10 | 110.643 | $x^{42} \\cdot y^{63} + x^{42} \\cdot y^{42} + x^{42} \\cdot y^{21} + x^{42} + x^{21} \\cdot y^{63} + x^{21} \\cdot y^{21} + y^{63} + y^{42} + x^{-21} \\cdot y^{21}$ | 105 | - | - | 2916 | - | case_026 |",
+      "native_identifiers": [
+        "benchmark-21"
+      ]
+    },
+    {
+      "source_file": "bb_code_decoupling_results.md",
+      "source_case_id": "case_027",
+      "f_exponents": [
+        [
+          -3,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          -1,
+          -2
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| $x^{-3} \\cdot y$ | $x^{-1} \\cdot y^{-2}$ | $6141$ | $x^{225} \\cdot y^{282}$ | $x^{238} \\cdot y^{271}$ | 6141.0 | - | - | - | 77.335 | - | - | - | - | - | - | case_027 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "bb_code_decoupling_results.md",
+      "source_case_id": "case_028",
+      "f_exponents": [
+        [
+          -3,
+          2
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          -3,
+          -1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| $x^{-3} \\cdot y^{2}$ | $x^{-3} \\cdot y^{-1}$ | $1533$ | $x^{35} \\cdot y^{154}$ | $x^{84} \\cdot y^{63}$ | 10731.0 | - | - | - | 3.65 | - | - | - | - | - | - | case_028 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "bb_code_decoupling_results.md",
+      "source_case_id": "case_029",
+      "f_exponents": [
+        [
+          -2,
+          -5
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          -1,
+          -3
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "upstream_completed": true,
+      "source_row": "| $x^{-2} \\cdot y^{-5}$ | $x^{-1} \\cdot y^{-3}$ | $42$ | $x^{2} \\cdot y^{16}$ | $x^{6} \\cdot y^{6}$ | 84.0 | (168, 336) | 77 | 7 | 3.115 | $x^{14} \\cdot y^{28} + x^{12} \\cdot y^{12} + x^{8} \\cdot y^{22} + x^{6} \\cdot y^{6} + x^{2} \\cdot y^{16} + 1$ | 42 | - | - | 410 | - | case_029 |",
+      "native_identifiers": [
+        "benchmark-22"
+      ]
+    },
+    {
+      "source_file": "bb_code_decoupling_results.md",
+      "source_case_id": "case_030",
+      "f_exponents": [
+        [
+          -6,
+          -1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          5,
+          0
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| $x^{-6} \\cdot y^{-1}$ | $x^{5}$ | $1023$ | $x^{15} \\cdot y^{87}$ | $x^{42} \\cdot y^{39}$ | 3069.0 | - | - | - | 1.102 | - | - | - | - | - | - | case_030 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "bb_code_decoupling_results.md",
+      "source_case_id": "case_031",
+      "f_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          -2
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| $x^{3} \\cdot y$ | $x^{2} \\cdot y^{-2}$ | $1533$ | $x^{15} \\cdot y^{54}$ | $x^{37} \\cdot y^{31}$ | 1533.0 | - | - | - | 3.536 | - | - | - | - | - | - | case_031 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "bb_code_decoupling_results.md",
+      "source_case_id": "case_032",
+      "f_exponents": [
+        [
+          -2,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          -3,
+          -2
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| $x^{-2} \\cdot y$ | $x^{-3} \\cdot y^{-2}$ | $3937$ | $x^{27} \\cdot y^{43}$ | $x^{106} \\cdot y^{23}$ | 3937.0 | - | - | - | 26.01 | - | - | - | - | - | - | case_032 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "bb_code_decoupling_results.md",
+      "source_case_id": "case_033",
+      "f_exponents": [
+        [
+          -3,
+          -1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          -2
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| $x^{-3} \\cdot y^{-1}$ | $x^{2} \\cdot y^{-2}$ | $1953$ | $x^{182} \\cdot y^{245}$ | $x^{217} \\cdot y^{217}$ | 13671.0 | - | - | - | 5.086 | - | - | - | - | - | - | case_033 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "bb_code_decoupling_results.md",
+      "source_case_id": "case_034",
+      "f_exponents": [
+        [
+          -1,
+          -3
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          -6
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| $x^{-1} \\cdot y^{-3}$ | $y^{-6}$ | $127$ | $y^{127}$ | $x^{127}$ | 16129.0 | - | - | - | 0.033 | - | - | - | - | - | - | case_034 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "bb_code_decoupling_results.md",
+      "source_case_id": "case_035",
+      "f_exponents": [
+        [
+          -8,
+          -1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "upstream_completed": true,
+      "source_row": "| $x^{-8} \\cdot y^{-1}$ | $x^{5} \\cdot y$ | $21$ | $x^{3} \\cdot y^{6}$ | $x^{4} \\cdot y$ | 21.0 | (42, 84) | 16 | 5 | 0.228 | $x^{-3} \\cdot y^{-6} + x^{-5} \\cdot y^{4} + x^{-7} \\cdot y^{-7} + x^{-11} \\cdot y^{-8} + x^{-20} \\cdot y^{-5} + x^{-24} \\cdot y^{-6}$ | 30 | - | - | 334 | - | case_035 |",
+      "native_identifiers": [
+        "benchmark-23"
+      ]
+    },
+    {
+      "source_file": "bb_code_decoupling_results.md",
+      "source_case_id": "case_036",
+      "f_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          -5
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "upstream_completed": true,
+      "source_row": "| $x \\cdot y^{-5}$ | $x \\cdot y^{4}$ | $186$ | $x^{10} \\cdot y^{44}$ | $x^{18} \\cdot y^{42}$ | 372.0 | (744, 1488) | 363 | 9 | 119.246 | $x^{18} \\cdot y^{42} + 1 + x^{-8} \\cdot y^{2} + x^{-26} \\cdot y^{-40} + x^{-28} \\cdot y^{-86} + x^{-46} \\cdot y^{-128}$ | 174 | - | - | 2842 | - | case_036 |",
+      "native_identifiers": [
+        "benchmark-24"
+      ]
+    },
+    {
+      "source_file": "bb_code_decoupling_results.md",
+      "source_case_id": "case_037",
+      "f_exponents": [
+        [
+          -1,
+          -1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          5,
+          0
+        ]
+      ],
+      "upstream_completed": true,
+      "source_row": "| $x^{-1} \\cdot y^{-1}$ | $x^{5}$ | $105$ | $x^{10} \\cdot y^{11}$ | $x^{15} \\cdot y^{6}$ | 105.0 | (210, 420) | 98 | 7 | 6.276 | $x^{15} \\cdot y^{6} + x^{10} \\cdot y^{11} + x^{5} \\cdot y^{-5} + 1 + x^{-5} \\cdot y^{5} + x^{-10} \\cdot y^{-11} + x^{-25} \\cdot y^{-17} + x^{-30} \\cdot y^{-12} + x^{-35} \\cdot y^{-28} + x^{-45} \\cdot y^{-18}$ | 63 | - | - | 852 | - | case_037 |",
+      "native_identifiers": [
+        "benchmark-25"
+      ]
+    },
+    {
+      "source_file": "bb_code_decoupling_results.md",
+      "source_case_id": "case_038",
+      "f_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          -2
+        ]
+      ],
+      "upstream_completed": true,
+      "source_row": "| $x \\cdot y^{3}$ | $x^{2} \\cdot y^{-2}$ | $63$ | $x^{7} \\cdot y^{14}$ | $x^{35} \\cdot y^{7}$ | 441.0 | (882, 1764) | 432 | 9 | 167.668 | $x^{105} \\cdot y^{21} + x^{70} \\cdot y^{14} + x^{63} + x^{35} \\cdot y^{7} + x^{7} \\cdot y^{14} + x^{-7} \\cdot y^{-14} + x^{-35} \\cdot y^{-7} + x^{-42} \\cdot y^{-21}$ | 126 | - | - | 4876 | - | case_038 |",
+      "native_identifiers": [
+        "benchmark-26"
+      ]
+    },
+    {
+      "source_file": "bb_code_decoupling_results.md",
+      "source_case_id": "case_039",
+      "f_exponents": [
+        [
+          -3,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          -3
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| $x^{-3} \\cdot y$ | $x \\cdot y^{-3}$ | $3570$ | $x^{54} \\cdot y^{156}$ | $x^{156} \\cdot y^{54}$ | 21420.0 | - | - | - | 25.874 | - | - | - | - | - | - | case_039 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "bb_code_decoupling_results.md",
+      "source_case_id": "case_040",
+      "f_exponents": [
+        [
+          -1,
+          -4
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          -3,
+          3
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| $x^{-1} \\cdot y^{-4}$ | $x^{-3} \\cdot y^{3}$ | - | - | - | - | - | - | - | 0.047 | - | - | - | - | - | - | case_040 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "bb_code_decoupling_results.md",
+      "source_case_id": "case_041",
+      "f_exponents": [
+        [
+          -1,
+          -2
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          -1
+        ]
+      ],
+      "upstream_completed": true,
+      "source_row": "| $x^{-1} \\cdot y^{-2}$ | $x^{2} \\cdot y^{-1}$ | $217$ | $x^{10} \\cdot y^{19}$ | $x^{13} \\cdot y^{3}$ | 217.0 | (434, 868) | 209 | 8 | 29.811 | $x^{3} \\cdot y^{-16} + x^{-7} \\cdot y^{-35} + x^{-20} \\cdot y^{-38} + x^{-23} \\cdot y^{-22}$ | 58 | - | - | 934 | - | case_041 |",
+      "native_identifiers": [
+        "benchmark-27"
+      ]
+    },
+    {
+      "source_file": "bb_code_decoupling_results.md",
+      "source_case_id": "case_042",
+      "f_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "g_exponents": [
+        [
+          -4,
+          4
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| $x^{3} \\cdot y^{2}$ | $x^{-4} \\cdot y^{4}$ | - | - | - | - | - | - | - | 0.051 | - | - | - | - | - | - | case_042 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "bb_code_decoupling_results.md",
+      "source_case_id": "case_043",
+      "f_exponents": [
+        [
+          -1,
+          3
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "upstream_completed": true,
+      "source_row": "| $x^{-1} \\cdot y^{3}$ | $x \\cdot y^{3}$ | $186$ | $x^{14} \\cdot y^{32}$ | $x^{16} \\cdot y^{10}$ | 372.0 | (744, 1488) | 363 | 9 | 147.209 | $x^{18} \\cdot y^{-12} + x^{14} \\cdot y^{32} + x^{4} \\cdot y^{-44} + x^{2} \\cdot y^{-22} + x^{-2} \\cdot y^{22} + x^{-12} \\cdot y^{-54} + x^{-16} \\cdot y^{-10} + x^{-26} \\cdot y^{-86} + x^{-30} \\cdot y^{-42} + x^{-32} \\cdot y^{-20} + x^{-42} \\cdot y^{-96} + x^{-46} \\cdot y^{-52}$ | 138 | - | - | 3592 | - | case_043 |",
+      "native_identifiers": [
+        "benchmark-28"
+      ]
+    },
+    {
+      "source_file": "bb_code_decoupling_results.md",
+      "source_case_id": "case_044",
+      "f_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          3,
+          -4
+        ]
+      ],
+      "g_exponents": [
+        [
+          -1,
+          -3
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| $x^{3} \\cdot y^{-4}$ | $x^{-1} \\cdot y^{-3}$ | $5115$ | $x^{9} \\cdot y^{159}$ | $x^{105} \\cdot y^{150}$ | 15345.0 | - | - | - | 61.305 | - | - | - | - | - | - | case_044 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "bb_code_decoupling_results.md",
+      "source_case_id": "case_045",
+      "f_exponents": [
+        [
+          -3,
+          2
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          -4,
+          -1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| $x^{-3} \\cdot y^{2}$ | $x^{-4} \\cdot y^{-1}$ | - | - | - | - | - | - | - | 0.034 | - | - | - | - | - | - | case_045 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "bb_code_decoupling_results.md",
+      "source_case_id": "case_046",
+      "f_exponents": [
+        [
+          -6,
+          2
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          5
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| $x^{-6} \\cdot y^{2}$ | $x^{2} \\cdot y^{5}$ | - | - | - | - | - | - | - | 0.382 | - | - | - | - | - | - | case_046 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "bb_code_decoupling_results.md",
+      "source_case_id": "case_047",
+      "f_exponents": [
+        [
+          -4,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          -1,
+          -3
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| $x^{-4}$ | $x^{-1} \\cdot y^{-3}$ | $63$ | $y^{63}$ | $x^{21}$ | 1323.0 | - | - | - | 0.014 | - | - | - | - | - | - | case_047 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "bb_code_decoupling_results.md",
+      "source_case_id": "case_048",
+      "f_exponents": [
+        [
+          -2,
+          2
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          -1,
+          -2
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| $x^{-2} \\cdot y^{2}$ | $x^{-1} \\cdot y^{-2}$ | $1533$ | $x^{11} \\cdot y^{23}$ | $x^{70} \\cdot y^{7}$ | 1533.0 | - | - | - | 3.719 | - | - | - | - | - | - | case_048 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "bb_code_decoupling_results.md",
+      "source_case_id": "case_049",
+      "f_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "g_exponents": [
+        [
+          -4,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "upstream_completed": true,
+      "source_row": "| $x^{2} \\cdot y^{2}$ | $x^{-4} \\cdot y$ | $889$ | $x^{4} \\cdot y^{9}$ | $x^{101} \\cdot y^{5}$ | 889.0 | (1778, 3556) | 879 | 10 | 1459.305 | $x^{206} \\cdot y^{19}$ | 225 | - | - | 3174 | - | case_049 |",
+      "native_identifiers": [
+        "benchmark-29"
+      ]
+    },
+    {
+      "source_file": "bb_code_decoupling_results.md",
+      "source_case_id": "case_050",
+      "f_exponents": [
+        [
+          -1,
+          3
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "upstream_completed": true,
+      "source_row": "| $x^{-1} \\cdot y^{3}$ | $x^{3}$ | $217$ | $x^{8} \\cdot y^{17}$ | $x^{17} \\cdot y^{9}$ | 217.0 | (434, 868) | 209 | 8 | 128.724 | $x^{18} \\cdot y^{-16} + x^{9} \\cdot y^{-8} + x^{-8} \\cdot y^{-17} + x^{-9} \\cdot y^{8} + x^{-26} \\cdot y^{-1} + x^{-33} \\cdot y^{-43} + x^{-34} \\cdot y^{-18} + x^{-42} \\cdot y^{-35} + x^{-51} \\cdot y^{-27}$ | 78 | - | - | 2764 | - | case_050 |",
+      "native_identifiers": [
+        "benchmark-30"
+      ]
+    },
+    {
+      "source_file": "bb_code_decoupling_results.md",
+      "source_case_id": "case_051",
+      "f_exponents": [
+        [
+          -3,
+          -2
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          -1,
+          -3
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| $x^{-3} \\cdot y^{-2}$ | $x^{-1} \\cdot y^{-3}$ | - | - | - | - | - | - | - | 0.034 | - | - | - | - | - | - | case_051 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "bb_code_decoupling_results.md",
+      "source_case_id": "case_052",
+      "f_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          3,
+          -3
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| $x^{3} \\cdot y^{-3}$ | $x^{4}$ | $8001$ | $x^{321} \\cdot y^{319}$ | $x^{333} \\cdot y^{306}$ | 8001.0 | - | - | - | 133.517 | - | - | - | - | - | - | case_052 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "bb_code_decoupling_results.md",
+      "source_case_id": "case_053",
+      "f_exponents": [
+        [
+          -4,
+          -3
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          3,
+          -1
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| $x^{-4} \\cdot y^{-3}$ | $x^{3} \\cdot y^{-1}$ | $7140$ | $x^{72} \\cdot y^{444}$ | $x^{228} \\cdot y^{216}$ | 85680.0 | - | - | - | 141.08 | - | - | - | - | - | - | case_053 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "bb_code_decoupling_results.md",
+      "source_case_id": "case_054",
+      "f_exponents": [
+        [
+          -2,
+          3
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| $x^{-2} \\cdot y^{3}$ | $x^{2} \\cdot y^{3}$ | - | - | - | - | - | - | - | 0.03 | - | - | - | - | - | - | case_054 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "bunny_001",
+      "f_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "upstream_completed": true,
+      "source_row": "| arXiv:2606.22853 [[12,2,3]] l=3 m=2 Hexagon | source polynomial pair:<br>$x + 1$<br>$x + y$ | $1$ | $y$ | $x$ | 1.0 | (2, 4) | 0 | 1 | 0.012 | $1$ | 0 | - | - | 2 | - | bunny_001 |",
+      "native_identifiers": [
+        "table-01"
+      ]
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "bunny_005",
+      "f_exponents": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "upstream_completed": true,
+      "source_row": "| arXiv:2606.22853 [[10,2,3]] l=1 m=5 Square | source polynomial pair:<br>$x + y^{2}$<br>$y^{2} + y$ | $1$ | $y$ | $x$ | 1.0 | (2, 4) | 0 | 1 | 0.106 | $x^{-1} \\cdot y + x^{-1}$ | 2 | - | - | 5 | - | bunny_005 |",
+      "native_identifiers": [
+        "table-02"
+      ]
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "bunny_007",
+      "f_exponents": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "upstream_completed": true,
+      "source_row": "| arXiv:2606.22853 [[18,4,3]] l=3 m=3 Hexagon | source polynomial pair:<br>$x^{2} \\cdot y + x \\cdot y + x$<br>$x \\cdot y + y^{2}$ | $3$ | $x \\cdot y^{2}$ | $x^{2} \\cdot y$ | 3.0 | (6, 12) | 1 | 2 | 0.047 | $x^{5} \\cdot y^{4} + x^{4} \\cdot y^{5} + x^{2} \\cdot y + y^{3}$ | 9 | - | - | 24 | - | bunny_007 |",
+      "native_identifiers": [
+        "table-03"
+      ]
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "bunny_009",
+      "f_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "upstream_completed": true,
+      "source_row": "| arXiv:2606.22853 [[36,4,4]] l=6 m=3 Hexagon | source polynomial pair:<br>$x^{2} + x + 1$<br>$x + y$ | $3$ | $x \\cdot y^{2}$ | $x^{2} \\cdot y$ | 3.0 | (6, 12) | 1 | 2 | 0.017 | $x^{4} \\cdot y^{2}$ | 6 | - | - | 6 | - | bunny_009 |",
+      "native_identifiers": [
+        "table-04"
+      ]
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "bunny_011",
+      "f_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "g_exponents": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "upstream_completed": true,
+      "source_row": "| arXiv:2606.22853 [[18,4,3]] l=3 m=3 Square | source polynomial pair:<br>$x^{2} \\cdot y + x \\cdot y + 1$<br>$x \\cdot y + x$ | $3$ | $y$ | $x^{3}$ | 3.0 | (6, 12) | 1 | 2 | 0.015 | $x^{3} \\cdot y + x^{3}$ | 4 | - | - | 5 | - | bunny_011 |",
+      "native_identifiers": [
+        "table-05"
+      ]
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "bunny_013",
+      "f_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "g_exponents": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "upstream_completed": true,
+      "source_row": "| arXiv:2606.22853 [[30,4,5]] l=3 m=5 Square | source polynomial pair:<br>$x^{2} \\cdot y^{2} + x + 1$<br>$x \\cdot y^{2} + x \\cdot y$ | $3$ | $y$ | $x^{3}$ | 3.0 | (6, 12) | 1 | 2 | 0.015 | $x^{3} \\cdot y^{2} + x^{3} \\cdot y$ | 5 | - | - | 10 | - | bunny_013 |",
+      "native_identifiers": [
+        "table-06"
+      ]
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "bunny_014",
+      "f_exponents": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| arXiv:2606.22853 [[12,4,3]] l=3 m=2 Hexagon | source polynomial pair:<br>$x^{2} + x \\cdot y + x + y$<br>$x^{2} \\cdot y + x \\cdot y$ | - | - | - | - | - | - | - | - | - | - | - | - | - | - | bunny_014 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "bunny_015",
+      "f_exponents": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| arXiv:2606.22853 [[18,6,3]] l=3 m=3 Hexagon | source polynomial pair:<br>$x^{3} + x^{2} + x \\cdot y + y$<br>$x^{3} \\cdot y + x \\cdot y$ | - | - | - | - | - | - | - | - | - | - | - | - | - | - | bunny_015 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "bunny_016",
+      "f_exponents": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          2
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "upstream_completed": true,
+      "source_row": "| arXiv:2606.22853 [[16,4,4]] l=4 m=2 Hexagon | source polynomial pair:<br>$x^{3} \\cdot y + x^{3} + x^{2} \\cdot y + x \\cdot y$<br>$x^{3} \\cdot y + y^{2}$ | $4$ | $y^{4}$ | $x \\cdot y$ | 4.0 | (8, 16) | 1 | 3 | 0.055 | $x^{-3} \\cdot y^{-3}$ | 6 | - | - | 20 | - | bunny_016 |",
+      "native_identifiers": [
+        "table-07"
+      ]
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "bunny_017",
+      "f_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| arXiv:2606.22853 [[12,4,3]] l=6 m=1 Square | source polynomial pair:<br>$x^{3} + x^{2} + x + 1$<br>$x^{2} + 1$ | - | - | - | - | - | - | - | - | - | - | - | - | - | - | bunny_017 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "bunny_018",
+      "f_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "g_exponents": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "upstream_completed": true,
+      "source_row": "| arXiv:2606.22853 [[36,8,4]] l=3 m=6 Square | source polynomial pair:<br>$x^{2} \\cdot y^{3} + x + 1$<br>$x \\cdot y^{3} + x \\cdot y^{2} + x \\cdot y$ | $3$ | $y^{3}$ | $x^{3}$ | 9.0 | (18, 36) | 5 | 4 | 0.059 | $x^{6} \\cdot y^{3} + x^{6} + x^{3}$ | 9 | - | - | 20 | - | bunny_018 |",
+      "native_identifiers": [
+        "table-08"
+      ]
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "bunny_019",
+      "f_exponents": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ]
+      ],
+      "upstream_completed": true,
+      "source_row": "| arXiv:2606.22853 [[40,4,5]] l=2 m=10 Square | source polynomial pair:<br>$x + y$<br>$y^{4} + y^{3} + y^{2} + y$ | $4$ | $x \\cdot y^{3}$ | $x^{2} \\cdot y^{2}$ | 4.0 | (8, 16) | 1 | 3 | 0.022 | $x^{2} \\cdot y^{6}$ | 8 | - | - | 13 | - | bunny_019 |",
+      "native_identifiers": [
+        "table-09"
+      ]
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "bunny_020",
+      "f_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_exponents": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| arXiv:2606.22853 [[70,10,5]] l=5 m=7 Square | source polynomial pair:<br>$x \\cdot y^{2} + x + y^{2} + 1$<br>$x \\cdot y^{2} + x \\cdot y$ | - | - | - | - | - | - | - | - | - | - | - | - | - | - | bunny_020 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "sbb_001",
+      "f_exponents": [
+        [
+          -2,
+          1
+        ],
+        [
+          -2,
+          2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "g_exponents": [
+        [
+          -2,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "upstream_completed": true,
+      "source_row": "| arXiv:2605.04151 [[27,6,3]] a1=(0, 3) a2=(3, 0) | source SBB gauge triples: `(y^2, y, x*y + 1)`<br>`(x^2 + x*y + 1, 1, 0)`<br>decouple BB pair:<br>$y + x^{-1} \\cdot y^{2} + x^{-2} \\cdot y^{2} + x^{-2} \\cdot y$<br>$x \\cdot y + y^{2} + 1 + x^{-2}$ | $3$ | $y^{3}$ | $x \\cdot y$ | 3.0 | (6, 12) | 0 | 3 | 0.032 | $y^{3} + 1 + x^{-1} \\cdot y^{2} + x^{-1} \\cdot y^{-1} + x^{-2} \\cdot y + x^{-2} \\cdot y^{-2} + x^{-3} + x^{-3} \\cdot y^{-3}$ | 6 | - | - | 24 | - | sbb_001 |",
+      "native_identifiers": [
+        "table-10"
+      ]
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "sbb_002",
+      "f_exponents": [
+        [
+          -2,
+          4
+        ],
+        [
+          -1,
+          3
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "upstream_completed": true,
+      "source_row": "| arXiv:2605.04151 [[60,10,4]] a1=(0, 5) a2=(4, -1) | source SBB gauge triples: `(y^2, x, x*y + 1)`<br>`(x^2*y^2 + x^2, x*y + y^2, 0)`<br>decouple BB pair:<br>$x \\cdot y^{2} + x + x^{-1} \\cdot y^{3} + x^{-2} \\cdot y^{4}$<br>$x \\cdot y^{3} + x \\cdot y + y^{2} + 1$ | $40$ | $y^{40}$ | $x^{2} \\cdot y^{2}$ | 80.0 | (160, 320) | 71 | 9 | 5.215 | $x^{4} \\cdot y^{44} + x^{4} \\cdot y^{4} + x^{2} \\cdot y^{2} + y^{40} + x^{-2} \\cdot y^{38} + x^{-2} \\cdot y^{-2} + x^{-4} \\cdot y^{-4}$ | 48 | - | - | 600 | - | sbb_002 |",
+      "native_identifiers": [
+        "table-11"
+      ]
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "sbb_003",
+      "f_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          -1
+        ],
+        [
+          3,
+          -2
+        ]
+      ],
+      "g_exponents": [
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          -1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "upstream_completed": true,
+      "source_row": "| arXiv:2605.04151 [[75,10,5]] a1=(0, 5) a2=(5, 0) | source SBB gauge triples: `(x^2, y^2, x^2*y + x)`<br>`(y^2 + 1, x + y, 0)`<br>decouple BB pair:<br>$x^{3} \\cdot y^{-2} + x^{2} \\cdot y^{-1} + y^{2} + 1$<br>$x^{2} \\cdot y + x^{2} \\cdot y^{-1} + x + x \\cdot y^{-2}$ | $40$ | $y^{40}$ | $x^{2} \\cdot y^{2}$ | 80.0 | (160, 320) | 71 | 9 | 7.337 | $x^{4} \\cdot y^{-36} + x^{4} \\cdot y^{-76} + x^{2} \\cdot y^{-38} + x^{2} \\cdot y^{-118} + y^{-40} + y^{-120} + x^{-2} \\cdot y^{38} + x^{-2} \\cdot y^{-2} + x^{-2} \\cdot y^{-42} + x^{-2} \\cdot y^{-82} + x^{-4} \\cdot y^{36} + x^{-4} \\cdot y^{-4} + x^{-4} \\cdot y^{-84} + x^{-6} \\cdot y^{34} + x^{-6} \\cdot y^{-6}$ | 120 | - | - | 1454 | - | sbb_003 |",
+      "native_identifiers": [
+        "table-12"
+      ]
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "sbb_004",
+      "f_exponents": [
+        [
+          -2,
+          4
+        ],
+        [
+          -1,
+          3
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "g_exponents": [
+        [
+          -2,
+          0
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "upstream_completed": true,
+      "source_row": "| arXiv:2605.04151 [[90,12,5]] a1=(0, 6) a2=(5, 2) | source SBB gauge triples: `(y^2, x^2, x^2*y^2 + 1)`<br>`(x^3*y + 1, x*y + y^2, 0)`<br>decouple BB pair:<br>$x^{3} \\cdot y + 1 + x^{-1} \\cdot y^{3} + x^{-2} \\cdot y^{4}$<br>$x^{3} \\cdot y^{3} + x \\cdot y + y^{2} + x^{-2}$ | $24$ | $y^{24}$ | $x^{4} \\cdot y^{4}$ | 96.0 | (192, 384) | 76 | 20 | 9.685 | $x^{16} \\cdot y^{-8} + x^{12} \\cdot y^{12} + x^{8} \\cdot y^{32} + x^{8} \\cdot y^{8} + x^{4} \\cdot y^{52} + x^{4} \\cdot y^{4} + x^{4} \\cdot y^{-20} + y^{48} + y^{24} + x^{-4} \\cdot y^{20} + x^{-4} \\cdot y^{-4} + x^{-8} \\cdot y^{16}$ | 56 | - | - | 934 | - | sbb_004 |",
+      "native_identifiers": [
+        "table-13"
+      ]
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "sbb_006",
+      "f_exponents": [
+        [
+          -2,
+          4
+        ],
+        [
+          -1,
+          3
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "upstream_completed": true,
+      "source_row": "| arXiv:2605.04151 [[126,14,6]] a1=(0, 7) a2=(6, -1) | source SBB gauge triples: `(y^2, x^2, x^2*y + x)`<br>`(x^3 + x, x*y + y^2, 0)`<br>decouple BB pair:<br>$x^{3} + x + x^{-1} \\cdot y^{3} + x^{-2} \\cdot y^{4}$<br>$x^{3} \\cdot y + x^{2} + x \\cdot y + 1$ | $56$ | $y^{56}$ | $x^{2} \\cdot y^{2}$ | 112.0 | (224, 448) | 101 | 11 | 13.287 | $1 + y^{-56} + y^{-112} + x^{-4} \\cdot y^{-60} + x^{-4} \\cdot y^{-116}$ | 120 | - | - | 2618 | - | sbb_006 |",
+      "native_identifiers": [
+        "table-14"
+      ]
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w6_k12_001",
+      "f_exponents": [
+        [
+          0,
+          13
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          12,
+          2
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          3
+        ],
+        [
+          7,
+          12
+        ],
+        [
+          14,
+          6
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| arXiv:2511.13560 [[648,12,d<=36]] l=18 m=18 h=9 w=6 | source cover code: [[648,12,d<=36]], l=18, m=18, h=9, check weight=6<br>source polynomial pair:<br>$x^{12} \\cdot y^{2} + x^{3} + y^{13}$<br>$x^{14} \\cdot y^{6} + x^{7} \\cdot y^{12} + y^{3}$ | - | - | - | - | - | - | - | 2.716 | - | - | - | - | - | - | cover_w6_k12_001 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w6_k12_002",
+      "f_exponents": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          21,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          9
+        ],
+        [
+          13,
+          0
+        ],
+        [
+          14,
+          0
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| arXiv:2511.13560 [[576,12,d<=32]] l=24 m=12 h=8 w=6 | source cover code: [[576,12,d<=32]], l=24, m=12, h=8, check weight=6<br>source polynomial pair:<br>$x^{21} + y^{7} + y^{2}$<br>$x^{14} + x^{13} + y^{9}$ | - | - | - | - | - | - | - | 1.531 | - | - | - | - | - | - | cover_w6_k12_002 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w6_k12_003",
+      "f_exponents": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          27,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          3
+        ],
+        [
+          37,
+          0
+        ],
+        [
+          38,
+          0
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| arXiv:2511.13560 [[504,12,d<=30]] l=42 m=6 h=7 w=6 | source cover code: [[504,12,d<=30]], l=42, m=6, h=7, check weight=6<br>source polynomial pair:<br>$x^{27} + y^{2} + y$<br>$x^{38} + x^{37} + y^{3}$ | - | - | - | - | - | - | - | 0.458 | - | - | - | - | - | - | cover_w6_k12_003 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w6_k12_004",
+      "f_exponents": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          15,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          9
+        ],
+        [
+          7,
+          0
+        ],
+        [
+          14,
+          0
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| arXiv:2511.13560 [[432,12,d<=24]] l=18 m=12 h=6 w=6 | source cover code: [[432,12,d<=24]], l=18, m=12, h=6, check weight=6<br>source polynomial pair:<br>$x^{15} + y^{7} + y^{2}$<br>$x^{14} + x^{7} + y^{9}$ | - | - | - | - | - | - | - | 0.837 | - | - | - | - | - | - | cover_w6_k12_004 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w6_k12_005",
+      "f_exponents": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          9,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          3
+        ],
+        [
+          25,
+          0
+        ],
+        [
+          26,
+          0
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| arXiv:2511.13560 [[360,12,24]] l=30 m=6 h=5 w=6 | source cover code: [[360,12,24]], l=30, m=6, h=5, check weight=6<br>source polynomial pair:<br>$x^{9} + y^{2} + y$<br>$x^{26} + x^{25} + y^{3}$ | - | - | - | - | - | - | - | 0.142 | - | - | - | - | - | - | cover_w6_k12_005 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w6_k12_007",
+      "f_exponents": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "upstream_completed": true,
+      "source_row": "| arXiv:2511.13560 [[216,12,12]] l=18 m=6 h=3 w=6 | source cover code: [[216,12,12]], l=18, m=6, h=3, check weight=6<br>source polynomial pair:<br>$x^{3} + y^{2} + y$<br>$x^{2} + x + y^{3}$ | $12$ | $y^{12}$ | $x^{12}$ | 144.0 | (288, 576) | 136 | 8 | 7.019 | $x^{-12} \\cdot y^{12} + x^{-12}$ | 24 | - | - | 374 | - | cover_w6_k12_007 |",
+      "native_identifiers": [
+        "table-15"
+      ]
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w6_k10_001",
+      "f_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          27,
+          4
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          15,
+          6
+        ],
+        [
+          24,
+          3
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| arXiv:2511.13560 [[434,10,d<=26]] l=31 m=7 h=7 w=6 | source cover code: [[434,10,d<=26]], l=31, m=7, h=7, check weight=6<br>source polynomial pair:<br>$x^{27} \\cdot y^{4} + x^{6} \\cdot y + 1$<br>$x^{24} \\cdot y^{3} + x^{15} \\cdot y^{6} + 1$ | - | - | - | - | - | - | - | 1.96 | - | - | - | - | - | - | cover_w6_k10_001 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w6_k10_002",
+      "f_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          27,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          15,
+          1
+        ],
+        [
+          24,
+          4
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| arXiv:2511.13560 [[372,10,d<=24]] l=31 m=6 h=6 w=6 | source cover code: [[372,10,d<=24]], l=31, m=6, h=6, check weight=6<br>source polynomial pair:<br>$x^{27} + x^{6} \\cdot y^{2} + 1$<br>$x^{24} \\cdot y^{4} + x^{15} \\cdot y + 1$ | - | - | - | - | - | - | - | 1.079 | - | - | - | - | - | - | cover_w6_k10_002 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w6_k10_003",
+      "f_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          27,
+          1
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          2
+        ],
+        [
+          15,
+          0
+        ],
+        [
+          24,
+          0
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| arXiv:2511.13560 [[310,10,d<=22]] l=31 m=5 h=5 w=6 | source cover code: [[310,10,d<=22]], l=31, m=5, h=5, check weight=6<br>source polynomial pair:<br>$x^{27} \\cdot y + x^{6} \\cdot y^{2} + 1$<br>$x^{24} + x^{15} + y^{2}$ | - | - | - | - | - | - | - | 2.352 | - | - | - | - | - | - | cover_w6_k10_003 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w6_k10_004",
+      "f_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          27,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          2
+        ],
+        [
+          15,
+          3
+        ],
+        [
+          24,
+          0
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| arXiv:2511.13560 [[248,10,d<=18]] l=31 m=4 h=4 w=6 | source cover code: [[248,10,d<=18]], l=31, m=4, h=4, check weight=6<br>source polynomial pair:<br>$x^{27} + x^{6} \\cdot y + 1$<br>$x^{24} + x^{15} \\cdot y^{3} + y^{2}$ | $279$ | $y^{93}$ | $x^{93} \\cdot y^{62}$ | 8649.0 | - | - | - | 13.798 | - | - | - | - | - | - | cover_w6_k10_004 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w6_k10_005",
+      "f_exponents": [
+        [
+          0,
+          1
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          27,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          15,
+          1
+        ],
+        [
+          24,
+          0
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| arXiv:2511.13560 [[186,10,14]] l=31 m=3 h=3 w=6 | source cover code: [[186,10,14]], l=31, m=3, h=3, check weight=6<br>source polynomial pair:<br>$x^{27} + x^{6} \\cdot y^{2} + y$<br>$x^{24} + x^{15} \\cdot y + 1$ | - | - | - | - | - | - | - | 0.508 | - | - | - | - | - | - | cover_w6_k10_005 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w6_k10_006",
+      "f_exponents": [
+        [
+          0,
+          1
+        ],
+        [
+          6,
+          0
+        ],
+        [
+          27,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          15,
+          0
+        ],
+        [
+          24,
+          0
+        ]
+      ],
+      "upstream_completed": true,
+      "source_row": "| arXiv:2511.13560 [[124,10,10]] l=31 m=2 h=2 w=6 | source cover code: [[124,10,10]], l=31, m=2, h=2, check weight=6<br>source polynomial pair:<br>$x^{27} + x^{6} + y$<br>$x^{24} + x^{15} + 1$ | $93$ | $y$ | $x^{93}$ | 93.0 | (186, 372) | 78 | 15 | 4.034 | $x^{279} \\cdot y^{-1} + x^{186} \\cdot y^{-1}$ | 280 | - | - | 128 | - | cover_w6_k10_006 |",
+      "native_identifiers": [
+        "table-16"
+      ]
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w6_k10_007",
+      "f_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          6,
+          0
+        ],
+        [
+          27,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          15,
+          0
+        ],
+        [
+          24,
+          0
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| arXiv:2511.13560 [[62,10,6]] l=31 m=1 h=1 w=6 | source cover code: [[62,10,6]], l=31, m=1, h=1, check weight=6<br>source polynomial pair:<br>$x^{27} + x^{6} + 1$<br>$x^{24} + x^{15} + 1$ | - | - | - | - | - | - | - | - | - | - | - | - | - | - | cover_w6_k10_007 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w6_k8_001",
+      "f_exponents": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          12,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          8,
+          0
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| arXiv:2511.13560 [[198,8,d<=16]] l=33 m=3 h=11 w=6 | source cover code: [[198,8,d<=16]], l=33, m=3, h=11, check weight=6<br>source polynomial pair:<br>$x^{12} + y^{2} + y$<br>$x^{8} + x + 1$ | $63$ | $y^{63}$ | $x^{63}$ | 3969.0 | - | - | - | 0.012 | - | - | - | - | - | - | cover_w6_k8_001 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w6_k8_002",
+      "f_exponents": [
+        [
+          0,
+          1
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          9,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          6,
+          3
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| arXiv:2511.13560 [[180,8,d<=16]] l=15 m=6 h=10 w=6 | source cover code: [[180,8,d<=16]], l=15, m=6, h=10, check weight=6<br>source polynomial pair:<br>$x^{9} + x^{6} \\cdot y^{5} + y$<br>$x^{6} \\cdot y^{3} + x^{2} + x$ | - | - | - | - | - | - | - | 0.738 | - | - | - | - | - | - | cover_w6_k8_002 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w6_k8_003",
+      "f_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          6,
+          2
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          25,
+          0
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| arXiv:2511.13560 [[162,8,14]] l=27 m=3 h=9 w=6 | source cover code: [[162,8,14]], l=27, m=3, h=9, check weight=6<br>source polynomial pair:<br>$x^{6} \\cdot y^{2} + y + 1$<br>$x^{25} + x^{20} + 1$ | - | - | - | - | - | - | - | 0.723 | - | - | - | - | - | - | cover_w6_k8_003 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w6_k8_004",
+      "f_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          21,
+          2
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          17,
+          0
+        ],
+        [
+          22,
+          0
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| arXiv:2511.13560 [[144,8,12]] l=24 m=3 h=8 w=6 | source cover code: [[144,8,12]], l=24, m=3, h=8, check weight=6<br>source polynomial pair:<br>$x^{21} \\cdot y^{2} + y + 1$<br>$x^{22} + x^{17} + 1$ | - | - | - | - | - | - | - | 0.463 | - | - | - | - | - | - | cover_w6_k8_004 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w6_k8_005",
+      "f_exponents": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          9,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          8,
+          0
+        ]
+      ],
+      "upstream_completed": true,
+      "source_row": "| arXiv:2511.13560 [[126,8,10]] l=21 m=3 h=7 w=6 | source cover code: [[126,8,10]], l=21, m=3, h=7, check weight=6<br>source polynomial pair:<br>$x^{9} + y^{2} + y$<br>$x^{8} + x + 1$ | $63$ | $x^{27} \\cdot y^{36}$ | $x^{36} \\cdot y^{27}$ | 567.0 | (1134, 2268) | 551 | 16 | 1085.181 | $x^{135} \\cdot y^{117} + x^{72} \\cdot y^{54} + x^{36} \\cdot y^{27} + x^{27} \\cdot y^{36} + x^{9} \\cdot y^{-9} + 1 + x^{-27} \\cdot y^{-36} + x^{-63} \\cdot y^{-63} + x^{-72} \\cdot y^{-54}$ | 252 | - | - | 9684 | - | cover_w6_k8_005 |",
+      "native_identifiers": [
+        "table-17"
+      ]
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w6_k8_007",
+      "f_exponents": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          9,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          7,
+          0
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| arXiv:2511.13560 [[90,8,10]] l=15 m=3 h=5 w=6 | source cover code: [[90,8,10]], l=15, m=3, h=5, check weight=6<br>source polynomial pair:<br>$x^{9} + y^{2} + y$<br>$x^{7} + x^{2} + 1$ | $93$ | $y^{93}$ | $x^{93}$ | 8649.0 | - | - | - | 0.013 | - | - | - | - | - | - | cover_w6_k8_007 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w6_k8_008",
+      "f_exponents": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          9,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          11,
+          0
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| arXiv:2511.13560 [[72,8,8]] l=12 m=3 h=4 w=6 | source cover code: [[72,8,8]], l=12, m=3, h=4, check weight=6<br>source polynomial pair:<br>$x^{9} + y^{2} + y$<br>$x^{11} + x^{4} + 1$ | $1533$ | $y^{1533}$ | $x^{1533}$ | 2.350089e6 | - | - | - | 12.17 | - | - | - | - | - | - | cover_w6_k8_008 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w6_k8_009",
+      "f_exponents": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "upstream_completed": true,
+      "source_row": "| arXiv:2511.13560 [[54,8,6]] l=9 m=3 h=3 w=6 | source cover code: [[54,8,6]], l=9, m=3, h=3, check weight=6<br>source polynomial pair:<br>$x^{3} + y^{2} + y$<br>$x^{2} + x + 1$ | $3$ | $y^{3}$ | $x^{3}$ | 9.0 | (18, 36) | 5 | 4 | 0.026 | $x^{3}$ | 3 | - | - | 12 | - | cover_w6_k8_009 |",
+      "native_identifiers": [
+        "table-18"
+      ]
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w6_k8_011",
+      "f_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| arXiv:2511.13560 [[18,8,2]] l=3 m=3 h=1 w=6 | source cover code: [[18,8,2]], l=3, m=3, h=1, check weight=6<br>source polynomial pair:<br>$y^{2} + y + 1$<br>$x^{2} + x + 1$ | - | - | - | - | - | - | - | - | - | - | - | - | - | - | cover_w6_k8_011 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w6_k6_001",
+      "f_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          3,
+          7
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| arXiv:2511.13560 [[154,6,d<=16]] l=7 m=11 h=11 w=6 | source cover code: [[154,6,d<=16]], l=7, m=11, h=11, check weight=6<br>source polynomial pair:<br>$x^{3} \\cdot y^{4} + x^{2} \\cdot y^{3} + 1$<br>$x^{3} \\cdot y^{7} + x^{2} \\cdot y^{8} + 1$ | $8001$ | $x^{105} \\cdot y^{294}$ | $x^{203} \\cdot y^{35}$ | 56007.0 | - | - | - | 114.919 | - | - | - | - | - | - | cover_w6_k6_001 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w6_k6_002",
+      "f_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          9
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| arXiv:2511.13560 [[140,6,14]] l=7 m=10 h=10 w=6 | source cover code: [[140,6,14]], l=7, m=10, h=10, check weight=6<br>source polynomial pair:<br>$x^{3} \\cdot y^{9} + x^{2} \\cdot y^{5} + 1$<br>$x^{3} \\cdot y^{3} + x^{2} \\cdot y^{6} + 1$ | - | - | - | - | - | - | - | 0.029 | - | - | - | - | - | - | cover_w6_k6_002 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w6_k6_003",
+      "f_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| arXiv:2511.13560 [[126,6,14]] l=7 m=9 h=9 w=6 | source cover code: [[126,6,14]], l=7, m=9, h=9, check weight=6<br>source polynomial pair:<br>$x^{3} \\cdot y + x^{2} \\cdot y^{5} + 1$<br>$x^{3} \\cdot y^{2} + x^{2} + 1$ | - | - | - | - | - | - | - | 0.029 | - | - | - | - | - | - | cover_w6_k6_003 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w6_k6_004",
+      "f_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| arXiv:2511.13560 [[112,6,12]] l=7 m=8 h=8 w=6 | source cover code: [[112,6,12]], l=7, m=8, h=8, check weight=6<br>source polynomial pair:<br>$x^{3} \\cdot y + x^{2} \\cdot y^{5} + 1$<br>$x^{3} \\cdot y^{5} + x^{2} \\cdot y^{6} + 1$ | - | - | - | - | - | - | - | 0.061 | - | - | - | - | - | - | cover_w6_k6_004 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w6_k6_005",
+      "f_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "upstream_completed": true,
+      "source_row": "| arXiv:2511.13560 [[98,6,12]] l=7 m=7 h=7 w=6 | source cover code: [[98,6,12]], l=7, m=7, h=7, check weight=6<br>source polynomial pair:<br>$x^{3} \\cdot y + x^{2} \\cdot y^{2} + 1$<br>$x^{3} \\cdot y^{2} + x^{2} + 1$ | $105$ | $y^{5}$ | $x^{21} \\cdot y^{3}$ | 105.0 | (210, 420) | 98 | 7 | 5.337 | $x^{42} \\cdot y^{11} + x^{21} \\cdot y^{3}$ | 53 | - | - | 320 | - | cover_w6_k6_005 |",
+      "native_identifiers": [
+        "table-19"
+      ]
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w6_k6_006",
+      "f_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "upstream_completed": true,
+      "source_row": "| arXiv:2511.13560 [[84,6,10]] l=7 m=6 h=6 w=6 | source cover code: [[84,6,10]], l=7, m=6, h=6, check weight=6<br>source polynomial pair:<br>$x^{3} \\cdot y^{2} + x^{2} \\cdot y^{3} + 1$<br>$x^{3} \\cdot y + x^{2} + 1$ | $217$ | $x^{7} \\cdot y^{27}$ | $x^{14} \\cdot y^{23}$ | 217.0 | (434, 868) | 209 | 8 | 27.003 | $x^{28} \\cdot y^{46}$ | 74 | - | - | 854 | - | cover_w6_k6_006 |",
+      "native_identifiers": [
+        "table-20"
+      ]
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w6_k6_007",
+      "f_exponents": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          4
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| arXiv:2511.13560 [[70,6,8]] l=7 m=5 h=5 w=6 | source cover code: [[70,6,8]], l=7, m=5, h=5, check weight=6<br>source polynomial pair:<br>$x^{3} \\cdot y + x^{2} \\cdot y^{4} + y$<br>$x^{3} + x^{2} + y^{4}$ | - | - | - | - | - | - | - | 0.014 | - | - | - | - | - | - | cover_w6_k6_007 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w6_k6_008",
+      "f_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "upstream_completed": true,
+      "source_row": "| arXiv:2511.13560 [[56,6,8]] l=7 m=4 h=4 w=6 | source cover code: [[56,6,8]], l=7, m=4, h=4, check weight=6<br>source polynomial pair:<br>$x^{3} \\cdot y^{2} + x^{2} + 1$<br>$x^{3} + x^{2} \\cdot y + 1$ | $7$ | $y$ | $x^{7}$ | 7.0 | (14, 28) | 4 | 3 | 0.045 | $x^{14} \\cdot y^{-1} + x^{14} \\cdot y^{-3} + x^{7} + x^{7} \\cdot y^{-3} + y^{-3}$ | 17 | - | - | 80 | - | cover_w6_k6_008 |",
+      "native_identifiers": [
+        "table-21"
+      ]
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w6_k6_009",
+      "f_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "upstream_completed": true,
+      "source_row": "| arXiv:2511.13560 [[42,6,6]] l=7 m=3 h=3 w=6 | source cover code: [[42,6,6]], l=7, m=3, h=3, check weight=6<br>source polynomial pair:<br>$x^{3} \\cdot y + x^{2} + 1$<br>$x^{3} \\cdot y^{2} + x^{2} + 1$ | $7$ | $y$ | $x^{7}$ | 7.0 | (14, 28) | 4 | 3 | 0.028 | $x^{14} \\cdot y^{2} + x^{7} \\cdot y^{2} + x^{7} \\cdot y + 1$ | 16 | - | - | 60 | - | cover_w6_k6_009 |",
+      "native_identifiers": [
+        "table-22"
+      ]
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w6_k6_010",
+      "f_exponents": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "upstream_completed": true,
+      "source_row": "| arXiv:2511.13560 [[28,6,4]] l=7 m=2 h=2 w=6 | source cover code: [[28,6,4]], l=7, m=2, h=2, check weight=6<br>source polynomial pair:<br>$x^{3} + x^{2} + y$<br>$x^{3} + x^{2} + 1$ | $7$ | $y$ | $x^{7}$ | 7.0 | (14, 28) | 4 | 3 | 0.022 | $x^{7}$ | 7 | - | - | 6 | - | cover_w6_k6_010 |",
+      "native_identifiers": [
+        "table-23"
+      ]
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w6_k6_011",
+      "f_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| arXiv:2511.13560 [[14,6,2]] l=7 m=1 h=1 w=6 | source cover code: [[14,6,2]], l=7, m=1, h=1, check weight=6<br>source polynomial pair:<br>$x^{3} + x^{2} + 1$<br>$x^{3} + x^{2} + 1$ | - | - | - | - | - | - | - | - | - | - | - | - | - | - | cover_w6_k6_011 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w6_inc_001",
+      "f_exponents": [
+        [
+          0,
+          8
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          9,
+          9
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          9
+        ],
+        [
+          7,
+          6
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| arXiv:2511.13560 [[288,20,6]] l=12 m=12 h=8 w=6 | source cover code: [[288,20,6]], l=12, m=12, h=8, check weight=6<br>source polynomial pair:<br>$x^{9} \\cdot y^{9} + x^{6} \\cdot y^{7} + y^{8}$<br>$x^{7} \\cdot y^{6} + x^{2} \\cdot y^{9} + 1$ | - | - | - | - | - | - | - | 2.823 | - | - | - | - | - | - | cover_w6_inc_001 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w6_inc_002",
+      "f_exponents": [
+        [
+          0,
+          8
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          6,
+          7
+        ]
+      ],
+      "g_exponents": [
+        [
+          1,
+          9
+        ],
+        [
+          2,
+          9
+        ],
+        [
+          6,
+          0
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| arXiv:2511.13560 [[288,16,12]] l=12 m=12 h=8 w=6 | source cover code: [[288,16,12]], l=12, m=12, h=8, check weight=6<br>source polynomial pair:<br>$x^{6} \\cdot y^{7} + x^{3} \\cdot y^{3} + y^{8}$<br>$x^{6} + x^{2} \\cdot y^{9} + x \\cdot y^{9}$ | - | - | - | - | - | - | - | 0.582 | - | - | - | - | - | - | cover_w6_inc_002 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w6_inc_003",
+      "f_exponents": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          11
+        ],
+        [
+          3,
+          18
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          18
+        ],
+        [
+          1,
+          15
+        ],
+        [
+          2,
+          9
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| arXiv:2511.13560 [[252,20,4]] l=6 m=21 h=7 w=6 | source cover code: [[252,20,4]], l=6, m=21, h=7, check weight=6<br>source polynomial pair:<br>$x^{3} \\cdot y^{18} + y^{11} + y^{4}$<br>$x^{2} \\cdot y^{9} + x \\cdot y^{15} + y^{18}$ | - | - | - | - | - | - | - | 0.764 | - | - | - | - | - | - | cover_w6_inc_003 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w6_inc_004",
+      "f_exponents": [
+        [
+          0,
+          8
+        ],
+        [
+          0,
+          19
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          9
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          15
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| arXiv:2511.13560 [[252,14,12]] l=6 m=21 h=7 w=6 | source cover code: [[252,14,12]], l=6, m=21, h=7, check weight=6<br>source polynomial pair:<br>$x^{3} + y^{19} + y^{8}$<br>$x^{2} \\cdot y^{15} + x \\cdot y^{6} + y^{9}$ | - | - | - | - | - | - | - | 0.809 | - | - | - | - | - | - | cover_w6_inc_004 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w8_k14_001",
+      "f_exponents": [
+        [
+          3,
+          6
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          4
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          11
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          5,
+          11
+        ],
+        [
+          9,
+          4
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| arXiv:2511.13560 [[288,14,d<=24]] l=12 m=12 h=4 w=8 | source cover code: [[288,14,d<=24]], l=12, m=12, h=4, check weight=8<br>source polynomial pair:<br>$x^{11} \\cdot y^{4} + x^{11} \\cdot y^{3} + x^{6} \\cdot y^{4} + x^{3} \\cdot y^{6}$<br>$x^{9} \\cdot y^{4} + x^{5} \\cdot y^{11} + x^{2} \\cdot y^{7} + y^{11}$ | - | - | - | - | - | - | - | 0.665 | - | - | - | - | - | - | cover_w8_k14_001 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w8_k14_002",
+      "f_exponents": [
+        [
+          0,
+          4
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          4
+        ]
+      ],
+      "g_exponents": [
+        [
+          2,
+          1
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          15,
+          4
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| arXiv:2511.13560 [[216,14,d<=20]] l=18 m=6 h=3 w=8 | source cover code: [[216,14,d<=20]], l=18, m=6, h=3, check weight=8<br>source polynomial pair:<br>$x^{11} \\cdot y^{4} + x^{11} \\cdot y^{3} + x^{3} + y^{4}$<br>$x^{15} \\cdot y^{4} + x^{6} \\cdot y^{5} + x^{5} \\cdot y^{5} + x^{2} \\cdot y$ | - | - | - | - | - | - | - | 1.455 | - | - | - | - | - | - | cover_w8_k14_002 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w8_k14_003",
+      "f_exponents": [
+        [
+          3,
+          0
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          11,
+          3
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          5
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          9,
+          4
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| arXiv:2511.13560 [[144,14,14]] l=12 m=6 h=2 w=8 | source cover code: [[144,14,14]], l=12, m=6, h=2, check weight=8<br>source polynomial pair:<br>$x^{11} \\cdot y^{3} + x^{6} \\cdot y^{4} + x^{5} \\cdot y^{4} + x^{3}$<br>$x^{9} \\cdot y^{4} + x^{8} \\cdot y + x^{5} \\cdot y^{5} + y^{5}$ | - | - | - | - | - | - | - | 0.919 | - | - | - | - | - | - | cover_w8_k14_003 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w8_k14_004",
+      "f_exponents": [
+        [
+          0,
+          4
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          5,
+          4
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          5
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| arXiv:2511.13560 [[72,14,8]] l=6 m=6 h=1 w=8 | source cover code: [[72,14,8]], l=6, m=6, h=1, check weight=8<br>source polynomial pair:<br>$x^{5} \\cdot y^{4} + x^{5} \\cdot y^{3} + x^{3} + y^{4}$<br>$x^{5} \\cdot y^{5} + x^{3} \\cdot y^{4} + x^{2} \\cdot y + y^{5}$ | $1020$ | $x^{60} \\cdot y^{156}$ | $x^{120} \\cdot y^{108}$ | 12240.0 | - | - | - | 2.137 | - | - | - | - | - | - | cover_w8_k14_004 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w8_k14_alt_001",
+      "f_exponents": [
+        [
+          0,
+          4
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          9,
+          3
+        ],
+        [
+          14,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          14,
+          1
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| arXiv:2511.13560 [[256,14,d<=22]] l=16 m=8 h=4 w=8 | source cover code: [[256,14,d<=22]], l=16, m=8, h=4, check weight=8<br>source polynomial pair:<br>$x^{14} + x^{9} \\cdot y^{3} + x^{3} \\cdot y^{6} + y^{4}$<br>$x^{14} \\cdot y + x^{13} \\cdot y + x^{4} \\cdot y + x^{3}$ | - | - | - | - | - | - | - | 2.05 | - | - | - | - | - | - | cover_w8_k14_alt_001 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w8_k14_alt_002",
+      "f_exponents": [
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          6,
+          4
+        ]
+      ],
+      "g_exponents": [
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          6,
+          1
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| arXiv:2511.13560 [[192,14,d<=16]] l=8 m=12 h=3 w=8 | source cover code: [[192,14,d<=16]], l=8, m=12, h=3, check weight=8<br>source polynomial pair:<br>$x^{6} \\cdot y^{4} + x^{3} \\cdot y^{2} + x \\cdot y^{3} + y^{8}$<br>$x^{6} \\cdot y + x^{5} \\cdot y + x^{4} \\cdot y^{5} + x^{3}$ | - | - | - | - | - | - | - | 0.264 | - | - | - | - | - | - | cover_w8_k14_alt_002 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w8_k14_alt_003",
+      "f_exponents": [
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          6,
+          4
+        ]
+      ],
+      "g_exponents": [
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          6,
+          1
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| arXiv:2511.13560 [[128,14,12]] l=8 m=8 h=2 w=8 | source cover code: [[128,14,12]], l=8, m=8, h=2, check weight=8<br>source polynomial pair:<br>$x^{6} \\cdot y^{4} + x^{3} \\cdot y^{6} + x \\cdot y^{3} + y^{4}$<br>$x^{6} \\cdot y + x^{5} \\cdot y^{5} + x^{4} \\cdot y^{5} + x^{3}$ | - | - | - | - | - | - | - | 0.182 | - | - | - | - | - | - | cover_w8_k14_alt_003 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w8_k14_alt_004",
+      "f_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          6,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          6,
+          1
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| arXiv:2511.13560 [[64,14,8]] l=8 m=4 h=1 w=8 | source cover code: [[64,14,8]], l=8, m=4, h=1, check weight=8<br>source polynomial pair:<br>$x^{6} + x^{3} \\cdot y^{2} + x \\cdot y^{3} + 1$<br>$x^{6} \\cdot y + x^{5} \\cdot y + x^{4} \\cdot y + x^{3}$ | $1016$ | $x^{8} \\cdot y^{100}$ | $x^{48} \\cdot y^{92}$ | 4064.0 | - | - | - | 1.41 | - | - | - | - | - | - | cover_w8_k14_alt_004 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w8_k12_001",
+      "f_exponents": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          6,
+          8
+        ]
+      ],
+      "g_exponents": [
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          6,
+          7
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| arXiv:2511.13560 [[160,12,d<=16]] l=8 m=10 h=5 w=8 | source cover code: [[160,12,d<=16]], l=8, m=10, h=5, check weight=8<br>source polynomial pair:<br>$x^{6} \\cdot y^{8} + x^{3} \\cdot y^{4} + x \\cdot y^{3} + y^{2}$<br>$x^{6} \\cdot y^{7} + x^{5} \\cdot y^{3} + x^{4} \\cdot y + x^{3}$ | - | - | - | - | - | - | - | 0.117 | - | - | - | - | - | - | cover_w8_k12_001 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w8_k12_002",
+      "f_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "g_exponents": [
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          6,
+          7
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| arXiv:2511.13560 [[128,12,14]] l=8 m=8 h=4 w=8 | source cover code: [[128,12,14]], l=8, m=8, h=4, check weight=8<br>source polynomial pair:<br>$x^{6} \\cdot y^{6} + x^{3} \\cdot y^{2} + x \\cdot y^{3} + 1$<br>$x^{6} \\cdot y^{7} + x^{5} \\cdot y + x^{4} \\cdot y^{7} + x^{3}$ | - | - | - | - | - | - | - | 0.376 | - | - | - | - | - | - | cover_w8_k12_002 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w8_k12_003",
+      "f_exponents": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          6,
+          4
+        ]
+      ],
+      "g_exponents": [
+        [
+          3,
+          2
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          6,
+          1
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| arXiv:2511.13560 [[96,12,10]] l=8 m=6 h=3 w=8 | source cover code: [[96,12,10]], l=8, m=6, h=3, check weight=8<br>source polynomial pair:<br>$x^{6} \\cdot y^{4} + x^{3} \\cdot y^{4} + x \\cdot y + y^{2}$<br>$x^{6} \\cdot y + x^{5} \\cdot y + x^{4} \\cdot y^{5} + x^{3} \\cdot y^{2}$ | - | - | - | - | - | - | - | 0.152 | - | - | - | - | - | - | cover_w8_k12_003 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w8_k12_004",
+      "f_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          6,
+          2
+        ]
+      ],
+      "g_exponents": [
+        [
+          3,
+          2
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          6,
+          1
+        ]
+      ],
+      "upstream_completed": true,
+      "source_row": "| arXiv:2511.13560 [[64,12,8]] l=8 m=4 h=2 w=8 | source cover code: [[64,12,8]], l=8, m=4, h=2, check weight=8<br>source polynomial pair:<br>$x^{6} \\cdot y^{2} + x^{3} + x \\cdot y^{3} + 1$<br>$x^{6} \\cdot y + x^{5} \\cdot y + x^{4} \\cdot y + x^{3} \\cdot y^{2}$ | $120$ | $y^{30}$ | $x^{8} \\cdot y^{6}$ | 240.0 | (480, 960) | 230 | 10 | 94.622 | $x^{16} \\cdot y^{12} + x^{16} \\cdot y^{-48} + x^{8} \\cdot y^{-24} + x^{8} \\cdot y^{-54} + y^{-30} + y^{-90} + x^{-8} \\cdot y^{-6} + x^{-8} \\cdot y^{-96} + x^{-16} \\cdot y^{-12} + x^{-16} \\cdot y^{-72}$ | 104 | - | - | 4618 | - | cover_w8_k12_004 |",
+      "native_identifiers": [
+        "table-24"
+      ]
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w8_k12_005",
+      "f_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          6,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          6,
+          1
+        ]
+      ],
+      "upstream_completed": true,
+      "source_row": "| arXiv:2511.13560 [[32,12,4]] l=8 m=2 h=1 w=8 | source cover code: [[32,12,4]], l=8, m=2, h=1, check weight=8<br>source polynomial pair:<br>$x^{6} + x^{3} + x \\cdot y + 1$<br>$x^{6} \\cdot y + x^{5} \\cdot y + x^{4} \\cdot y + x^{3}$ | $8$ | $y^{4}$ | $x^{8}$ | 32.0 | (64, 128) | 25 | 7 | 0.303 | $x^{16} \\cdot y^{4} + x^{8} \\cdot y^{4} + y^{4} + x^{-8} \\cdot y^{4}$ | 20 | - | - | 168 | - | cover_w8_k12_005 |",
+      "native_identifiers": [
+        "table-25"
+      ]
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w8_k10_001",
+      "f_exponents": [
+        [
+          0,
+          12
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          5,
+          8
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          7
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| arXiv:2511.13560 [[168,10,d<=18]] l=6 m=14 h=7 w=8 | source cover code: [[168,10,d<=18]], l=6, m=14, h=7, check weight=8<br>source polynomial pair:<br>$x^{5} \\cdot y^{8} + x^{5} \\cdot y^{5} + x^{3} \\cdot y^{4} + y^{12}$<br>$x^{5} \\cdot y^{5} + x^{3} \\cdot y^{6} + x^{2} \\cdot y^{7} + y^{7}$ | - | - | - | - | - | - | - | 0.198 | - | - | - | - | - | - | cover_w8_k10_001 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w8_k10_002",
+      "f_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          5,
+          4
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          5
+        ],
+        [
+          2,
+          9
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          5,
+          11
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| arXiv:2511.13560 [[144,10,d<=16]] l=6 m=12 h=6 w=8 | source cover code: [[144,10,d<=16]], l=6, m=12, h=6, check weight=8<br>source polynomial pair:<br>$x^{5} \\cdot y^{4} + x^{5} \\cdot y^{3} + x^{3} \\cdot y^{4} + 1$<br>$x^{5} \\cdot y^{11} + x^{3} \\cdot y^{4} + x^{2} \\cdot y^{9} + y^{5}$ | - | - | - | - | - | - | - | 0.476 | - | - | - | - | - | - | cover_w8_k10_002 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w8_k10_003",
+      "f_exponents": [
+        [
+          0,
+          6
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          5,
+          3
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          5,
+          9
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| arXiv:2511.13560 [[120,10,14]] l=6 m=10 h=5 w=8 | source cover code: [[120,10,14]], l=6, m=10, h=5, check weight=8<br>source polynomial pair:<br>$x^{5} \\cdot y^{3} + x^{5} + x^{3} \\cdot y^{2} + y^{6}$<br>$x^{5} \\cdot y^{9} + x^{3} \\cdot y^{2} + x^{2} \\cdot y + y$ | - | - | - | - | - | - | - | 1.517 | - | - | - | - | - | - | cover_w8_k10_003 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w8_k10_004",
+      "f_exponents": [
+        [
+          0,
+          2
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          9,
+          0
+        ],
+        [
+          11,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          5,
+          3
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| arXiv:2511.13560 [[96,10,12]] l=12 m=4 h=4 w=8 | source cover code: [[96,10,12]], l=12, m=4, h=4, check weight=8<br>source polynomial pair:<br>$x^{11} + x^{9} + x^{5} \\cdot y + y^{2}$<br>$x^{5} \\cdot y^{3} + x^{3} \\cdot y^{2} + x^{2} \\cdot y^{3} + y^{3}$ | $2046$ | $x^{18} \\cdot y^{24}$ | $x^{516} \\cdot y^{6}$ | 12276.0 | - | - | - | 7.619 | - | - | - | - | - | - | cover_w8_k10_004 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w8_k10_005",
+      "f_exponents": [
+        [
+          0,
+          4
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          5
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| arXiv:2511.13560 [[72,10,8]] l=6 m=6 h=3 w=8 | source cover code: [[72,10,8]], l=6, m=6, h=3, check weight=8<br>source polynomial pair:<br>$x^{5} \\cdot y + x^{5} + x^{3} \\cdot y^{4} + y^{4}$<br>$x^{5} \\cdot y + x^{3} \\cdot y^{2} + x^{2} \\cdot y^{5} + y^{5}$ | $372$ | $x^{12} \\cdot y^{64}$ | $x^{24} \\cdot y^{4}$ | 1488.0 | - | - | - | 0.157 | - | - | - | - | - | - | cover_w8_k10_005 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w8_k10_006",
+      "f_exponents": [
+        [
+          0,
+          2
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          5,
+          3
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| arXiv:2511.13560 [[48,10,6]] l=6 m=4 h=2 w=8 | source cover code: [[48,10,6]], l=6, m=4, h=2, check weight=8<br>source polynomial pair:<br>$x^{5} \\cdot y + x^{5} + x^{3} + y^{2}$<br>$x^{5} \\cdot y^{3} + x^{3} \\cdot y^{2} + x^{2} \\cdot y^{3} + y^{3}$ | $210$ | $x^{18} \\cdot y^{48}$ | $x^{42} \\cdot y^{42}$ | 1260.0 | - | - | - | 0.034 | - | - | - | - | - | - | cover_w8_k10_006 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w8_k10_007",
+      "f_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "upstream_completed": true,
+      "source_row": "| arXiv:2511.13560 [[24,10,4]] l=6 m=2 h=1 w=8 | source cover code: [[24,10,4]], l=6, m=2, h=1, check weight=8<br>source polynomial pair:<br>$x^{5} \\cdot y + x^{5} + x^{3} + 1$<br>$x^{5} \\cdot y + x^{3} + x^{2} \\cdot y + y$ | $186$ | $x^{12} \\cdot y^{22}$ | $x^{18} \\cdot y^{2}$ | 372.0 | (744, 1488) | 362 | 10 | 92.757 | $x^{48} \\cdot y^{26} + x^{30} \\cdot y^{24}$ | 74 | - | - | 1036 | - | cover_w8_k10_007 |",
+      "native_identifiers": [
+        "table-26"
+      ]
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w8_k8_001",
+      "f_exponents": [
+        [
+          0,
+          5
+        ],
+        [
+          3,
+          9
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          8
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          5,
+          3
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| arXiv:2511.13560 [[140,8,d<=16]] l=7 m=10 h=5 w=8 | source cover code: [[140,8,d<=16]], l=7, m=10, h=5, check weight=8<br>source polynomial pair:<br>$x^{5} \\cdot y^{5} + x^{4} \\cdot y^{6} + x^{3} \\cdot y^{9} + y^{5}$<br>$x^{5} \\cdot y^{3} + x^{4} \\cdot y + x^{3} \\cdot y + y^{8}$ | - | - | - | - | - | - | - | 0.377 | - | - | - | - | - | - | cover_w8_k8_001 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w8_k8_002",
+      "f_exponents": [
+        [
+          0,
+          3
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          5,
+          7
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          7
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| arXiv:2511.13560 [[112,8,14]] l=7 m=8 h=4 w=8 | source cover code: [[112,8,14]], l=7, m=8, h=4, check weight=8<br>source polynomial pair:<br>$x^{5} \\cdot y^{7} + x^{4} \\cdot y^{4} + x^{3} \\cdot y^{7} + y^{3}$<br>$x^{5} \\cdot y^{7} + x^{4} \\cdot y^{7} + x^{3} \\cdot y^{5} + 1$ | - | - | - | - | - | - | - | 1.546 | - | - | - | - | - | - | cover_w8_k8_002 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w8_k8_003",
+      "f_exponents": [
+        [
+          0,
+          5
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          5,
+          3
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "upstream_completed": true,
+      "source_row": "| arXiv:2511.13560 [[84,8,10]] l=7 m=6 h=3 w=8 | source cover code: [[84,8,10]], l=7, m=6, h=3, check weight=8<br>source polynomial pair:<br>$x^{5} \\cdot y^{3} + x^{4} \\cdot y^{4} + x^{3} \\cdot y^{5} + y^{5}$<br>$x^{5} \\cdot y + x^{4} \\cdot y^{3} + x^{3} \\cdot y^{3} + y^{2}$ | $56$ | $y^{4}$ | $x^{28} \\cdot y^{2}$ | 112.0 | (224, 448) | 103 | 9 | 11.048 | $x^{112} \\cdot y^{8} + x^{112} \\cdot y^{4} + x^{84} \\cdot y^{6} + x^{56} \\cdot y^{12} + x^{56} \\cdot y^{8} + x^{56} + x^{28} \\cdot y^{6} + x^{28} \\cdot y^{2} + x^{28} \\cdot y^{-2} + 1 + y^{-4} + x^{-28} \\cdot y^{-2}$ | 120 | - | - | 1608 | - | cover_w8_k8_003 |",
+      "native_identifiers": [
+        "table-27"
+      ]
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w8_k8_004",
+      "f_exponents": [
+        [
+          0,
+          1
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          5,
+          3
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| arXiv:2511.13560 [[56,8,8]] l=7 m=4 h=2 w=8 | source cover code: [[56,8,8]], l=7, m=4, h=2, check weight=8<br>source polynomial pair:<br>$x^{5} \\cdot y + x^{4} \\cdot y^{2} + x^{3} \\cdot y^{3} + y$<br>$x^{5} \\cdot y^{3} + x^{4} \\cdot y^{3} + x^{3} \\cdot y^{3} + y^{2}$ | $840$ | $y^{60}$ | $x^{28} \\cdot y^{46}$ | 1680.0 | - | - | - | 1.347 | - | - | - | - | - | - | cover_w8_k8_004 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w8_k8_005",
+      "f_exponents": [
+        [
+          0,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "upstream_completed": true,
+      "source_row": "| arXiv:2511.13560 [[28,8,4]] l=7 m=2 h=1 w=8 | source cover code: [[28,8,4]], l=7, m=2, h=1, check weight=8<br>source polynomial pair:<br>$x^{5} \\cdot y + x^{4} + x^{3} \\cdot y + y$<br>$x^{5} \\cdot y + x^{4} \\cdot y + x^{3} \\cdot y + 1$ | $56$ | $y^{4}$ | $x^{28} \\cdot y^{2}$ | 112.0 | (224, 448) | 103 | 9 | 5.941 | $x^{56} \\cdot y^{8} + x^{28} \\cdot y^{6} + x^{28} \\cdot y^{2} + 1$ | 64 | - | - | 256 | - | cover_w8_k8_005 |",
+      "native_identifiers": [
+        "table-28"
+      ]
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w8_inc_001",
+      "f_exponents": [
+        [
+          7,
+          10
+        ],
+        [
+          8,
+          4
+        ],
+        [
+          9,
+          3
+        ],
+        [
+          10,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          4,
+          1
+        ],
+        [
+          6,
+          9
+        ],
+        [
+          9,
+          1
+        ],
+        [
+          11,
+          0
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| arXiv:2511.13560 [[288,36,d<=8]] l=12 m=12 h=8 w=8 | source cover code: [[288,36,d<=8]], l=12, m=12, h=8, check weight=8<br>source polynomial pair:<br>$x^{10} + x^{9} \\cdot y^{3} + x^{8} \\cdot y^{4} + x^{7} \\cdot y^{10}$<br>$x^{11} + x^{9} \\cdot y + x^{6} \\cdot y^{9} + x^{4} \\cdot y$ | - | - | - | - | - | - | - | 1.86 | - | - | - | - | - | - | cover_w8_inc_001 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w8_inc_002",
+      "f_exponents": [
+        [
+          3,
+          10
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          9,
+          11
+        ],
+        [
+          10,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          1,
+          5
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          10,
+          5
+        ],
+        [
+          11,
+          8
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| arXiv:2511.13560 [[288,24,d<=14]] l=12 m=12 h=8 w=8 | source cover code: [[288,24,d<=14]], l=12, m=12, h=8, check weight=8<br>source polynomial pair:<br>$x^{10} + x^{9} \\cdot y^{11} + x^{4} \\cdot y^{4} + x^{3} \\cdot y^{10}$<br>$x^{11} \\cdot y^{8} + x^{10} \\cdot y^{5} + x^{8} \\cdot y^{5} + x \\cdot y^{5}$ | - | - | - | - | - | - | - | 0.854 | - | - | - | - | - | - | cover_w8_inc_002 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w8_inc_003",
+      "f_exponents": [
+        [
+          2,
+          4
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          7,
+          6
+        ]
+      ],
+      "g_exponents": [
+        [
+          5,
+          5
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          10,
+          1
+        ],
+        [
+          11,
+          4
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| arXiv:2511.13560 [[288,20,d<=22]] l=12 m=12 h=8 w=8 | source cover code: [[288,20,d<=22]], l=12, m=12, h=8, check weight=8<br>source polynomial pair:<br>$x^{7} \\cdot y^{6} + x^{5} \\cdot y^{3} + x^{4} \\cdot y^{8} + x^{2} \\cdot y^{4}$<br>$x^{11} \\cdot y^{4} + x^{10} \\cdot y + x^{8} \\cdot y + x^{5} \\cdot y^{5}$ | - | - | - | - | - | - | - | 0.331 | - | - | - | - | - | - | cover_w8_inc_003 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w8_inc_004",
+      "f_exponents": [
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          14
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          25
+        ],
+        [
+          1,
+          21
+        ],
+        [
+          2,
+          25
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| arXiv:2511.13560 [[224,56,4]] l=4 m=28 h=7 w=8 | source cover code: [[224,56,4]], l=4, m=28, h=7, check weight=8<br>source polynomial pair:<br>$x^{3} \\cdot y^{14} + x^{2} \\cdot y^{4} + x \\cdot y^{7} + y^{4}$<br>$x^{3} + x^{2} \\cdot y^{25} + x \\cdot y^{21} + y^{25}$ | - | - | - | - | - | - | - | 0.669 | - | - | - | - | - | - | cover_w8_inc_004 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w8_inc_005",
+      "f_exponents": [
+        [
+          0,
+          16
+        ],
+        [
+          1,
+          23
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          18
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          21
+        ],
+        [
+          1,
+          9
+        ],
+        [
+          2,
+          9
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| arXiv:2511.13560 [[224,32,8]] l=4 m=28 h=7 w=8 | source cover code: [[224,32,8]], l=4, m=28, h=7, check weight=8<br>source polynomial pair:<br>$x^{3} \\cdot y^{18} + x^{2} \\cdot y^{4} + x \\cdot y^{23} + y^{16}$<br>$x^{3} + x^{2} \\cdot y^{9} + x \\cdot y^{9} + y^{21}$ | - | - | - | - | - | - | - | 1.847 | - | - | - | - | - | - | cover_w8_inc_005 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w8_inc_006",
+      "f_exponents": [
+        [
+          10,
+          0
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          13,
+          3
+        ],
+        [
+          16,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          16,
+          1
+        ],
+        [
+          26,
+          1
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| arXiv:2511.13560 [[224,26,d<=14]] l=28 m=4 h=7 w=8 | source cover code: [[224,26,d<=14]], l=28, m=4, h=7, check weight=8<br>source polynomial pair:<br>$x^{16} + x^{13} \\cdot y^{3} + x^{11} \\cdot y^{2} + x^{10}$<br>$x^{26} \\cdot y + x^{16} \\cdot y + x^{3} + x \\cdot y$ | - | - | - | - | - | - | - | 2.257 | - | - | - | - | - | - | cover_w8_inc_006 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w8_inc_008",
+      "f_exponents": [
+        [
+          4,
+          0
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          15,
+          2
+        ],
+        [
+          21,
+          3
+        ]
+      ],
+      "g_exponents": [
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          21,
+          1
+        ],
+        [
+          22,
+          1
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| arXiv:2511.13560 [[192,30,8]] l=24 m=4 h=6 w=8 | source cover code: [[192,30,8]], l=24, m=4, h=6, check weight=8<br>source polynomial pair:<br>$x^{21} \\cdot y^{3} + x^{15} \\cdot y^{2} + x^{10} + x^{4}$<br>$x^{22} \\cdot y + x^{21} \\cdot y + x^{4} \\cdot y + x^{3}$ | - | - | - | - | - | - | - | 0.904 | - | - | - | - | - | - | cover_w8_inc_008 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w8_inc_009",
+      "f_exponents": [
+        [
+          9,
+          3
+        ],
+        [
+          12,
+          0
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          23,
+          2
+        ]
+      ],
+      "g_exponents": [
+        [
+          1,
+          1
+        ],
+        [
+          10,
+          1
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          20,
+          1
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| arXiv:2511.13560 [[192,26,12]] l=24 m=4 h=6 w=8 | source cover code: [[192,26,12]], l=24, m=4, h=6, check weight=8<br>source polynomial pair:<br>$x^{23} \\cdot y^{2} + x^{14} + x^{12} + x^{9} \\cdot y^{3}$<br>$x^{20} \\cdot y + x^{11} + x^{10} \\cdot y + x \\cdot y$ | - | - | - | - | - | - | - | 0.915 | - | - | - | - | - | - | cover_w8_inc_009 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w8_inc_010",
+      "f_exponents": [
+        [
+          4,
+          0
+        ],
+        [
+          6,
+          0
+        ],
+        [
+          9,
+          3
+        ],
+        [
+          19,
+          2
+        ]
+      ],
+      "g_exponents": [
+        [
+          5,
+          1
+        ],
+        [
+          7,
+          0
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          22,
+          1
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| arXiv:2511.13560 [[192,20,d<=16]] l=24 m=4 h=6 w=8 | source cover code: [[192,20,d<=16]], l=24, m=4, h=6, check weight=8<br>source polynomial pair:<br>$x^{19} \\cdot y^{2} + x^{9} \\cdot y^{3} + x^{6} + x^{4}$<br>$x^{22} \\cdot y + x^{8} \\cdot y + x^{7} + x^{5} \\cdot y$ | - | - | - | - | - | - | - | 0.665 | - | - | - | - | - | - | cover_w8_inc_010 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w8_inc_011",
+      "f_exponents": [
+        [
+          2,
+          0
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          21,
+          3
+        ],
+        [
+          23,
+          2
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          1
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          17,
+          1
+        ],
+        [
+          18,
+          1
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| arXiv:2511.13560 [[192,18,d<=16]] l=24 m=4 h=6 w=8 | source cover code: [[192,18,d<=16]], l=24, m=4, h=6, check weight=8<br>source polynomial pair:<br>$x^{23} \\cdot y^{2} + x^{21} \\cdot y^{3} + x^{20} + x^{2}$<br>$x^{18} \\cdot y + x^{17} \\cdot y + x^{11} + y$ | - | - | - | - | - | - | - | 1.566 | - | - | - | - | - | - | cover_w8_inc_011 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w8_inc_012",
+      "f_exponents": [
+        [
+          6,
+          0
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          16,
+          0
+        ],
+        [
+          17,
+          3
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          10,
+          1
+        ],
+        [
+          11,
+          0
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| arXiv:2511.13560 [[160,40,4]] l=20 m=4 h=5 w=8 | source cover code: [[160,40,4]], l=20, m=4, h=5, check weight=8<br>source polynomial pair:<br>$x^{17} \\cdot y^{3} + x^{16} + x^{7} \\cdot y^{2} + x^{6}$<br>$x^{11} + x^{10} \\cdot y + x \\cdot y + y$ | - | - | - | - | - | - | - | 0.4 | - | - | - | - | - | - | cover_w8_inc_012 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w8_inc_013",
+      "f_exponents": [
+        [
+          1,
+          3
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          16,
+          0
+        ],
+        [
+          19,
+          2
+        ]
+      ],
+      "g_exponents": [
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          8,
+          1
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| arXiv:2511.13560 [[160,24,8]] l=20 m=4 h=5 w=8 | source cover code: [[160,24,8]], l=20, m=4, h=5, check weight=8<br>source polynomial pair:<br>$x^{19} \\cdot y^{2} + x^{16} + x^{14} + x \\cdot y^{3}$<br>$x^{8} \\cdot y + x^{6} \\cdot y + x^{3} + x \\cdot y$ | - | - | - | - | - | - | - | 0.167 | - | - | - | - | - | - | cover_w8_inc_013 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w8_inc_014",
+      "f_exponents": [
+        [
+          10,
+          0
+        ],
+        [
+          12,
+          0
+        ],
+        [
+          15,
+          2
+        ],
+        [
+          17,
+          3
+        ]
+      ],
+      "g_exponents": [
+        [
+          1,
+          1
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          7,
+          0
+        ],
+        [
+          12,
+          1
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| arXiv:2511.13560 [[160,16,d<=14]] l=20 m=4 h=5 w=8 | source cover code: [[160,16,d<=14]], l=20, m=4, h=5, check weight=8<br>source polynomial pair:<br>$x^{17} \\cdot y^{3} + x^{15} \\cdot y^{2} + x^{12} + x^{10}$<br>$x^{12} \\cdot y + x^{7} + x^{6} \\cdot y + x \\cdot y$ | - | - | - | - | - | - | - | 0.235 | - | - | - | - | - | - | cover_w8_inc_014 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w8_inc_015",
+      "f_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          6,
+          0
+        ],
+        [
+          7,
+          2
+        ]
+      ],
+      "g_exponents": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          9,
+          1
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| arXiv:2511.13560 [[96,24,4]] l=12 m=4 h=3 w=8 | source cover code: [[96,24,4]], l=12, m=4, h=3, check weight=8<br>source polynomial pair:<br>$x^{7} \\cdot y^{2} + x^{6} + x \\cdot y^{3} + 1$<br>$x^{9} \\cdot y + x^{8} \\cdot y + x^{3} + x^{2} \\cdot y$ | - | - | - | - | - | - | - | 0.126 | - | - | - | - | - | - | cover_w8_inc_015 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w8_inc_016",
+      "f_exponents": [
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          11,
+          2
+        ]
+      ],
+      "g_exponents": [
+        [
+          6,
+          1
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          9,
+          1
+        ],
+        [
+          11,
+          0
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| arXiv:2511.13560 [[96,20,8]] l=12 m=4 h=3 w=8 | source cover code: [[96,20,8]], l=12, m=4, h=3, check weight=8<br>source polynomial pair:<br>$x^{11} \\cdot y^{2} + x^{4} + x^{2} + x \\cdot y^{3}$<br>$x^{11} + x^{9} \\cdot y + x^{8} \\cdot y + x^{6} \\cdot y$ | - | - | - | - | - | - | - | 0.07 | - | - | - | - | - | - | cover_w8_inc_016 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w8_inc_017",
+      "f_exponents": [
+        [
+          4,
+          0
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          11,
+          2
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          1
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          9,
+          1
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| arXiv:2511.13560 [[96,16,4]] l=12 m=4 h=3 w=8 | source cover code: [[96,16,4]], l=12, m=4, h=3, check weight=8<br>source polynomial pair:<br>$x^{11} \\cdot y^{2} + x^{10} + x^{5} \\cdot y^{3} + x^{4}$<br>$x^{9} \\cdot y + x^{6} \\cdot y + x^{3} + y$ | - | - | - | - | - | - | - | 0.211 | - | - | - | - | - | - | cover_w8_inc_017 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w8_inc_018",
+      "f_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          6,
+          0
+        ],
+        [
+          9,
+          3
+        ]
+      ],
+      "g_exponents": [
+        [
+          5,
+          1
+        ],
+        [
+          7,
+          0
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          10,
+          1
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| arXiv:2511.13560 [[96,12,8]] l=12 m=4 h=3 w=8 | source cover code: [[96,12,8]], l=12, m=4, h=3, check weight=8<br>source polynomial pair:<br>$x^{9} \\cdot y^{3} + x^{6} + x^{3} \\cdot y^{2} + 1$<br>$x^{10} \\cdot y + x^{8} \\cdot y + x^{7} + x^{5} \\cdot y$ | - | - | - | - | - | - | - | 0.065 | - | - | - | - | - | - | cover_w8_inc_018 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "cover_w8_inc_020",
+      "f_exponents": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "upstream_completed": false,
+      "source_row": "| arXiv:2511.13560 [[32,8,4]] l=4 m=4 h=1 w=8 | source cover code: [[32,8,4]], l=4, m=4, h=1, check weight=8<br>source polynomial pair:<br>$x^{3} \\cdot y^{2} + x^{2} + x \\cdot y^{3} + 1$<br>$x^{3} + x^{2} \\cdot y + x \\cdot y + y$ | $504$ | $y^{6}$ | $x^{168} \\cdot y^{4}$ | 1008.0 | - | - | - | 0.255 | - | - | - | - | - | - | cover_w8_inc_020 |",
+      "native_identifiers": []
+    },
+    {
+      "source_file": "additional_bb_code_decoupling_results.md",
+      "source_case_id": "double_gross",
+      "f_exponents": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "g_exponents": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "upstream_completed": true,
+      "source_row": "| Doubled Gross code [[288,12,18]] (Bravyi et al., 2024) | source polynomial pair:<br>$x^{3} + y^{7} + y^{2}$<br>$x^{2} + x + y^{3}$ | $126$ | $x^{6} \\cdot y^{66}$ | $x^{12} \\cdot y^{6}$ | 756.0 | (1512, 3024) | 744 | 12 | 865.028 | $x^{6} \\cdot y^{-60} + 1 + y^{-126} + x^{-6} \\cdot y^{-192} + x^{-18} \\cdot y^{54} + x^{-18} \\cdot y^{-72} + x^{-24} \\cdot y^{-12} + x^{-30} \\cdot y^{48} + x^{-30} \\cdot y^{-204} + x^{-36} \\cdot y^{-144}$ | 234 | - | - | 9931 | - | double_gross |",
+      "native_identifiers": [
+        "table-29"
+      ]
+    }
+  ]
+}

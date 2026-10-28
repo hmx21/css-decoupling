@@ -1,0 +1,67 @@
+cff-version: 1.2.0
+message: >-
+  If you use this software, please cite the article below and the software
+  version you used. For the two-dimensional algorithm, please also cite
+  arXiv:2608.09915.
+title: "css-decoupling"
+type: software
+version: "0.1.0"
+date-released: "2026-10-28"
+license: MIT
+repository-code: "https://github.com/hmx21/css-decoupling"
+authors:
+  - family-names: He
+    given-names: Mingxin
+    affiliation: "Chen-Ning Yang Institute for Advanced Study, Tsinghua University"
+abstract: >-
+  Exact decoupling of translation-invariant topological CSS codes over
+  prime-field Laurent polynomial rings into stacks of higher-form toric codes,
+  with the specialized two-dimensional algorithm, the general
+  higher-dimensional construction, explicit SUM/SWAP circuits and
+  independently verified results.
+keywords:
+  - quantum error correction
+  - CSS codes
+  - toric codes
+  - quantum cellular automata
+  - Laurent polynomials
+preferred-citation:
+  type: article
+  title: "Toric codes all the way down: decoupling translation-invariant topological CSS codes in higher dimensions"
+  authors:
+    - family-names: He
+      given-names: Mingxin
+    - family-names: Wang
+      given-names: Yifei
+    - family-names: Song
+      given-names: Hao
+    - family-names: Gu
+      given-names: Yingfei
+  year: 2026
+  notes: "arXiv:XXXX.XXXXX"
+references:
+  - type: article
+    title: "Decoupling 2D translation-invariant topological CSS codes"
+    authors:
+      - family-names: Wang
+        given-names: Yifei
+      - family-names: Ni
+        given-names: Zhongyi
+      - family-names: He
+        given-names: Mingxin
+      - family-names: Liu
+        given-names: Jinguo
+      - family-names: Gu
+        given-names: Yingfei
+    year: 2026
+    url: "https://arxiv.org/abs/2608.09915"
+  - type: software
+    title: "topological-css-code-decoupling"
+    authors:
+      - family-names: Ni
+        given-names: Zhongyi
+      - family-names: He
+        given-names: Mingxin
+    repository-code: "https://github.com/nzy1997/topological-css-code-decoupling"
+    commit: "7879852262ee7bd0bb69c1a2edae8f1543fcca3e"
+    license: MIT

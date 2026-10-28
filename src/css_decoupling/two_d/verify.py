@@ -1,0 +1,193 @@
+"""Read-only independent result verification; never calls the QCA constructor.
+
+Complete kernels and quotient normal forms are recomputed by exact native
+algebra. Saved success flags and source hashes are not mathematical evidence.
+"""
+from types import SimpleNamespace
+
+from .algebra import eye, solve, kernel, direct_sum
+from ..topology.cohomology import FiniteQuotient
+from ..lattice.retained import Lattice, matrix_power
+from ..certificates.translation_kernel import verify_translation_kernel
+from .pipeline import SCHEMA, PRIME_SCHEMA, check_shape, stabilized_checks, matrix_stats
+from .qca import verify_qca
+from .serialization import digest, load
+from .compact_cell import lattice_from_metadata, verify_cell_geometry
+
+
+def require(condition, message):
+    if not condition:
+        raise ValueError(message)
+
+
+def verify_generation(source, target, witness):
+    require(target*witness["source_in_target"] == source, "Forward stabilizer generation failed")
+    require(source*witness["target_in_source"] == target, "Backward stabilizer generation failed")
+
+
+def verify_circuit_binding(result, *, max_families=200_000,max_matrix_terms=1_000_000):
+    """Check only circuit and its binding to a separately verified QCA.
+
+    This is not a complete input/QCA verifier. The CLI uses it after its QCA
+    read-back verification, avoiding a third full QCA replay during construction.
+    Full ``verify`` always checks input/QCA first and then invokes this helper.
+    """
+    from .circuits import verify_circuit
+    C=result["circuit"];Q=result["qca"]
+    require(C is not None and result["circuit_status"] == "complete_stabilized","Missing or inconsistent circuit")
+    U,V=Q["psi"][1],Q["psi_inverse"][1]
+    require(C["original_qca"] == U and C["original_inverse"] == V,"Circuit QCA binding failed")
+    verify_circuit(C,max_families=max_families,max_matrix_terms=max_matrix_terms)
+    n=U.nrows
+    EX,EZ=stabilized_checks(result["coarse_original_HX"],result["coarse_original_HZ"],n)
+    SX,SZ=stabilized_checks(Q["standard_HX"],Q["standard_HZ"],n)
+    require(C["source_HX"] == EX and C["source_HZ"] == EZ,"Circuit source/ancilla checks mismatch")
+    require(C["target_HX"] == SX and C["target_HZ"] == SZ,"Circuit target/ancilla checks mismatch")
+    require(C["retained_lattice"] == result["lattice"]["basis_columns"],"Circuit lattice mismatch")
+    verify_generation(C["z_action"]*EZ.dagger(),SZ.dagger(),C["stabilizers"]["Z"])
+    verify_generation(C["x_action"]*EX.dagger(),SX.dagger(),C["stabilizers"]["X"])
+    return True
+
+
+def verify(result, *, expected_HX=None, expected_HZ=None,
+           max_families=200_000,max_matrix_terms=1_000_000):
+    """Verify a decoded certificate; optional expected input binds its identity."""
+    require(result["schema"] in (SCHEMA, PRIME_SCHEMA), "Unsupported certificate schema")
+    modern = result["schema"] == PRIME_SCHEMA
+    O = result["original"]
+    HX, HZ = O["HX"], O["HZ"]
+    check_shape(HX,HZ)
+    require(type(O["p"]) is int and type(O["D"]) is int and O["p"] == HX.ring.p and O["D"] == 2, "Input metadata mismatch")
+    require(modern or HX.ring.p == 2, "Legacy v1 certificates are restricted to qubits")
+    require(digest(O) == result["input_sha256"], "Input hash mismatch")
+    if expected_HX is not None:
+        require(HX == expected_HX, "Certificate is for another HX")
+    if expected_HZ is not None:
+        require(HZ == expected_HZ, "Certificate is for another HZ")
+    conventions = {
+        "coordinates": ["x", "y"], "matrix_action": "columns",
+        "dagger": "transpose and negate Laurent exponents", "psi": "input-to-standard",
+        "psi_inverse": "standard-to-input", "physical_Z": "psi_1",
+        "physical_X": "psi_inverse_1 dagger"}
+    if modern:
+        conventions.update(stabilizer_eigenvalue="+1",
+            pauli_phase="pure-X/Z phase zero; mixed X-then-Z multiplicative extension")
+    require(result["conventions"] == conventions, "Unsupported or altered conventions")
+    for label, H, S in (("Z",HX,HZ.dagger()), ("X",HZ,HX.dagger())):
+        proof = result["input_exactness"][label]
+        K = proof["kernel"]
+        require(not H*K, "Claimed physical kernel is not a kernel")
+        require(S*proof["kernel_in_stabilizers"] == K, "Exactness witness failed")
+        require(K*proof["stabilizers_in_kernel"] == S, "Image-in-kernel witness failed")
+        # A finite list of cycles is not sufficient: generate the full Laurent
+        # kernel using all Schreyer S-pairs and check its containment.
+        complete = kernel(H)
+        solve(K, complete)
+    reduced = {}
+    for label, H in (("X",HX), ("Z",HZ)):
+        data = result["check_reduction"][label]
+        require(set(data) == {"basis","basis_in_input","input_in_basis"},"Unexpected check-reduction evidence")
+        B = data["basis"]
+        require(H.dagger()*data["basis_in_input"] == B, "Reduced checks not generated by input")
+        require(B*data["input_in_basis"] == H.dagger(), "Original checks not generated by reduced checks")
+        require(not kernel(B), "Reduced check generators are dependent")
+        reduced[label] = B.dagger()
+    RX,RZ = reduced["X"],reduced["Z"]
+    require(RX == result["reduced_HX"] and RZ == result["reduced_HZ"], "Reduced-check metadata mismatch")
+    require(RX.ncols == RX.nrows+RZ.nrows, "Independent-check density failed")
+    quotients = {}
+    for degree, (label,A) in enumerate((("X",RX),("Z",RZ))):
+        saved = result["anyons"][label]
+        actual = FiniteQuotient(A)
+        require(type(saved["dimension"]) is int and actual.dimension == saved["dimension"], "Anyon dimension mismatch")
+        require(actual.basis == saved["basis"], "Anyon representatives mismatch")
+        require(list(actual.actions) == saved["actions"], "Anyon translation action mismatch")
+        require([list(m) for m in actual.standard] == [list(m) for m in saved["standard_monomials"]],
+                "Anyon standard monomials mismatch")
+        require(digest(actual.groebner_data) == digest(saved["groebner"]), "Anyon Groebner evidence mismatch")
+        quotients[degree] = actual
+    require(quotients[0].dimension == quotients[1].dimension, "Unequal anyon sector dimensions")
+    full = None
+    if result["translation_kernel"] is not None:
+        verify_translation_kernel(quotients, 2, result["translation_kernel"])
+        full = Lattice(result["translation_kernel"]["basis_columns"], max_index=None)
+    require(modern or full is not None, "Legacy result requires a complete translation kernel")
+    selected = lattice_from_metadata(result["lattice"], max_index=None)
+    require(digest(selected.metadata()) == digest(result["lattice"]), "Altered lattice index/representatives")
+    # The public pipeline emits explicit coordinates only for its automatic
+    # full-kernel compact route. Its geometry witness is mandatory; generic
+    # arbitrary representatives remain a lower-level Lattice capability.
+    if result['lattice'].get('representative_strategy') == 'explicit-v1':
+        require('cell_geometry' in result, 'Explicit pipeline coordinates require a compact-cell proof')
+    if modern:
+        request = result["lattice_request"]
+        require(set(request) == {"mode", "basis_columns", "kernel_scope"}, "Invalid lattice request fields")
+        if request["mode"] == "auto":
+            require(request["basis_columns"] is None and request["kernel_scope"] == "complete" and
+                    full is not None and "cell_geometry" in result, "Automatic mode requires full-kernel evidence")
+            require(full.contains(selected) and selected.contains(full), "Automatic selection changed the full kernel")
+        elif request["mode"] == "fixed":
+            require(digest(request["basis_columns"]) == digest(result["lattice"]["basis_columns"]),
+                    "Fixed lattice differs from the requested columns")
+            require(request["kernel_scope"] == "specified-translations" and full is None and
+                    "cell_geometry" not in result, "Fixed mode must carry the specified-translation contract")
+        else:
+            raise ValueError("Unknown lattice request mode")
+    if full is not None:
+        require(full.contains(selected), "Selected lattice is not anyon-preserving")
+    for actual in quotients.values():
+        for column in range(2):
+            action = eye(HX.ring,actual.dimension)
+            for axis in range(2):
+                action = action*matrix_power(actual.actions[axis],selected.basis[axis][column])
+            require(action == eye(HX.ring,actual.dimension), "Selected translation action failed")
+    OX,OZ = selected.restrict(HX),selected.restrict(HZ)
+    require(OX == result["coarse_original_HX"] and OZ == result["coarse_original_HZ"], "Original restriction mismatch")
+    if 'cell_geometry' in result:
+        verify_cell_geometry(full, selected, result['cell_geometry'], HX.ring,
+                             checks=((HX, OX), (HZ, OZ)))
+    Q = result["qca"]
+    require(Q["direction"] == "psi: input-to-standard; psi_inverse: standard-to-input","Altered QCA direction declaration")
+    require(Q["input_HX"] == selected.restrict(RX) and Q["input_HZ"] == selected.restrict(RZ),
+            "QCA is not bound to restricted reduced input")
+    require(Q["toric_copies"] == quotients[0].dimension, "Toric multiplicity mismatch")
+    verify_qca(Q)
+    U,V = Q["psi"][1],Q["psi_inverse"][1]
+    TX,TZ = Q["standard_HX"],Q["standard_HZ"]
+    comparison = result["original_chain_comparison"]
+    require(comparison["kind"] == "retraction_of_redundant_generator_presentation","Invalid original comparison kind")
+    f,g = comparison["to_standard"],comparison["to_original"]
+    red = result["check_reduction"]
+    require(f[0] == Q["psi"][0]*selected.restrict(red["X"]["basis_in_input"].dagger()) and
+            g[0] == selected.restrict(red["X"]["input_in_basis"].dagger())*Q["psi_inverse"][0],
+            "Original X-endpoint comparison mismatch")
+    require(f[2] == Q["psi"][2]*selected.restrict(red["Z"]["input_in_basis"]) and
+            g[2] == selected.restrict(red["Z"]["basis_in_input"])*Q["psi_inverse"][2],
+            "Original Z-endpoint comparison mismatch")
+    require(f[1] == U and g[1] == V,"Original physical comparison mismatch")
+    for i,n in ((0,TX.nrows),(1,U.nrows),(2,TZ.nrows)):
+        require(f[i]*g[i] == eye(HX.ring,n),"Original chain retraction failed")
+        if i != 1:
+            P = comparison["original_endpoint_projectors"][i]
+            require(P == g[i]*f[i] and P*P == P,"Original endpoint projector failed")
+    require(TX*f[1] == f[0]*OX and TZ.dagger()*f[2] == f[1]*OZ.dagger(),"Original forward chain failed")
+    require(OX*g[1] == g[0]*TX and OZ.dagger()*g[2] == g[1]*TZ.dagger(),"Original reverse chain failed")
+    verify_generation(U*OZ.dagger(),TZ.dagger(),result["qca_stabilizers"]["Z"])
+    verify_generation(V.dagger()*OX.dagger(),TX.dagger(),result["qca_stabilizers"]["X"])
+    expected_resources = {"original_HX":matrix_stats(HX),"original_HZ":matrix_stats(HZ),
+        "coarse_HX":matrix_stats(Q["input_HX"]),"coarse_HZ":matrix_stats(Q["input_HZ"]),
+        "psi_1":matrix_stats(U),"psi_1_inverse":matrix_stats(V),"lattice_index":selected.index,
+        "toric_copies":Q["toric_copies"],"product_X":Q["product_x"],"product_Z":Q["product_z"]}
+    require(digest(result["resources"]) == digest(expected_resources),"QCA resource metadata mismatch")
+    C = result["circuit"]
+    if C is not None:
+        verify_circuit_binding(result,max_families=max_families,max_matrix_terms=max_matrix_terms)
+    else:
+        require(result["circuit_status"] in ("not_requested","resource_incomplete"),"Missing claimed circuit")
+    return {"verified":True,"qca":True,"circuit":C is not None,
+            "input_sha256":result["input_sha256"],"lattice_index":selected.index,
+            "toric_copies":Q["toric_copies"]}
+
+
+def verify_file(path, **kwargs):
+    return verify(load(path),**kwargs)

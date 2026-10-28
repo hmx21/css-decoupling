@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "css-decoupling"
+authors = [{ name = "Mingxin He" }]
+version = "0.1.0"
+description = "Exact, certificate-producing decoupling of translation-invariant topological CSS codes"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE", "LICENSES/*.txt", "THIRD_PARTY_NOTICES.md", "CITATION.cff", "CITATION.upstream.cff"]
+requires-python = ">=3.11"
+dependencies = ["sympy>=1.13,<1.15"]
+keywords = ["quantum-error-correction", "CSS-codes", "toric-codes", "Laurent-polynomials", "QCA"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Scientific/Engineering :: Physics",
+    "Topic :: Scientific/Engineering :: Mathematics",
+]
+
+[project.urls]
+Homepage = "https://github.com/hmx21/css-decoupling"
+Repository = "https://github.com/hmx21/css-decoupling"
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "build>=1", "twine>=5"]
+
+[project.scripts]
+css-decouple = "css_decoupling.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["css_decoupling*"]
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.package-data]
+"css_decoupling.two_d" = ["data/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--import-mode=importlib"
+markers = ["integration: full exact example or regression computation"]
