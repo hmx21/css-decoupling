@@ -1,4 +1,4 @@
-"""Independent exact certificates for the Section V.C direct cone circuit.
+"""Independent exact certificates for the direct cone circuit of Sec. V.
 
 The certified target is the direct sum of the supplied restricted blocks.
 It carries no claim of smallest toric presentation, minimal ancilla count

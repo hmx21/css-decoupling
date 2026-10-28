@@ -1,6 +1,7 @@
 """Direct, ancilla-free decoupling of an explicitly blocked mapping cone.
 
-This optional construction implements the manuscript's Section V.C.  It
+This optional construction implements the direct decoupling of the glued code
+in Sec. V of the manuscript, written as the mapping cone of Appendix A5.  It
 retains both given summands (after restriction of scalars); it does not
 replace them by smaller canonical toric complexes.  The general CSS-input
 pipeline remains a separate construction.

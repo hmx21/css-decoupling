@@ -101,7 +101,7 @@ complexes. A stop is a resource limit, never a mathematical answer.
 | Gluing classes and their values `f_I` (Lemma 1); restricted values `kappa(mu_1, ..., mu_n)` (Lemma 9) | `gluing_classes`, `GluingClass.coefficients` and `GluingClass.evaluate`. |
 | Coarse-graining less than line 6 of Algorithm 1 (Appendix B3, Proposition 2, Corollary 2) | `analyze_profile` and the default `coarse_graining="adaptive"` of `decouple`, using `select_lattice` and `subspace_preimage`. `ProfileAnalysis.lattice_guarantee` states whether the cell is proved minimal. `coarse_graining="uniform"` uses line 6 instead. |
 | Logical qudits on a torus (Corollary 1, Lemma 13) | `periodic_code` (exact count on a finite torus), `periodic_layer` and `periodic_profile`. |
-| Sec. V, the glued code | [`examples/paper_section_v.py`](../examples/paper_section_v.py) recomputes each stated claim from Eq. (16). `css-decouple example glued` writes the same input for the CLI. |
+| Sec. V, the glued code | [`examples/paper_section_v.py`](../examples/paper_section_v.py) recomputes each stated claim from Eq. (13). `css-decouple example glued` writes the same input for the CLI. |
 
 ## Choices outside the manuscript
 

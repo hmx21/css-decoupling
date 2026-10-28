@@ -1,6 +1,6 @@
 """Reproduce Sec. V of the manuscript: removing the gluing of the glued code.
 
-The checks are typed from Eq. (16). Every claim of Sec. V is recomputed and
+The checks are typed from Eq. (13). Every claim of Sec. V is recomputed and
 compared with the stated value; finite torus sizes are a finite check only.
 """
 import argparse
@@ -12,7 +12,7 @@ from css_decoupling import (Ring, Matrix, coarse_grain, check_lattice, analyze_p
 
 
 def paper_glued(R):
-    """H_X(GC) and H_Z(GC) of Eq. (16), with w_i = x_i - 1."""
+    """H_X(GC) and H_Z(GC) of Eq. (13), with w_i = x_i - 1."""
     x1,x2,x3=R.variables
     w1,w2,w3=x1-1,x2-1,x3-1
     o,l=R(0),R(1)

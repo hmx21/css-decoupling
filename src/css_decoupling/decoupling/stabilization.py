@@ -1,4 +1,4 @@
-"""Construct Section IV's stable invertible lifts from exact comparison data.
+"""Construct the invertible lifts of Lemma 11 (Appendix C2) from exact comparison data.
 
 This module is the certified last construction stage.  It does not obtain
 comparison maps from arbitrary CSS checks or certify topological exactness.

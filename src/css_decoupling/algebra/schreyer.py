@@ -17,7 +17,7 @@ from __future__ import annotations
 from dataclasses import dataclass, field
 from heapq import heapify, heappop, heappush
 from math import isfinite
-from time import monotonic
+from time import perf_counter
 
 from css_decoupling.algebra.laurent import Matrix, Poly, eye, zeros
 from css_decoupling.errors import ResourceLimit
@@ -29,7 +29,7 @@ class _Budget:
     max_basis: int
     max_terms: int
     max_pairs: int
-    start: float = field(default_factory=monotonic)
+    start: float = field(default_factory=perf_counter)
     pairs: int = 0
 
     def __post_init__(self):
@@ -41,7 +41,7 @@ class _Budget:
                 raise ValueError("Native resolution limits must be positive integers")
 
     def check(self, *vectors, basis_size=0):
-        if self.timeout is not None and monotonic() - self.start > self.timeout:
+        if self.timeout is not None and perf_counter() - self.start > self.timeout:
             raise ResourceLimit(f"Native Schreyer resolution exceeded {self.timeout} seconds")
         if basis_size > self.max_basis:
             raise ResourceLimit(f"Native Schreyer basis exceeds {self.max_basis} generators")
