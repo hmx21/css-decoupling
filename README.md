@@ -15,7 +15,11 @@ This package accompanies the article
 
 > M. He, Y. Wang, H. Song, and Y. Gu, *Toric codes all the way down:
 > decoupling translation-invariant topological CSS codes in higher
-> dimensions*, arXiv:XXXX.XXXXX (2026).
+> dimensions*, [arXiv:2610.40592](https://arxiv.org/abs/2610.40592) (2026).
+
+Version 0.1.0 is archived on Zenodo; the DOI
+[10.5281/zenodo.23752877](https://doi.org/10.5281/zenodo.23752877)
+always resolves to the latest version.
 
 It implements both algorithms of that article. In dimension two it also
 provides a prime-field version of the algorithm of Wang, Ni, He, Liu, and Gu,

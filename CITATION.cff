@@ -7,6 +7,7 @@ title: "css-decoupling"
 type: software
 version: "0.1.0"
 date-released: "2026-10-28"
+doi: "10.5281/zenodo.23752877"
 license: MIT
 repository-code: "https://github.com/hmx21/css-decoupling"
 authors:
@@ -38,7 +39,8 @@ preferred-citation:
     - family-names: Gu
       given-names: Yingfei
   year: 2026
-  notes: "arXiv:XXXX.XXXXX"
+  doi: "10.48550/arXiv.2610.40592"
+  url: "https://arxiv.org/abs/2610.40592"
 references:
   - type: article
     title: "Decoupling 2D translation-invariant topological CSS codes"
